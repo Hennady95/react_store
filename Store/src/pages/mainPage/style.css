@@ -1,0 +1,27 @@
+.main-page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 25px 26px 32px;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../../assets/background.jpg');
+}
+
+.main-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    background: url('../../assets/img/slyder_background.png') no-repeat center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.slider-title {
+    font-size: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}

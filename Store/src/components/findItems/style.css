@@ -1,0 +1,52 @@
+.find-shadow {
+    position: absolute;
+    top: 100px;
+    width: 1200px;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.find_result-container {
+    margin: 10px 0 0 230px;
+    width: 600px;
+    max-height: 300px;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+
+.find-item-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.fint_item-title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.find_item-code {
+    text-align: left;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.find-item-containe > img {
+    width: 100px;
+}
+
+.find_price-title {
+    margin: 0 0 10px 0;
+}
+
+.find_buy-btn {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.find_buy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

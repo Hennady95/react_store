@@ -1,0 +1,37 @@
+.delivery-page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 25px 26px 32px;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/background.jpg');
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.condition-title {
+    width: 400px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.condition-list {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.condition-list > li {
+    width: 400px;
+    text-align: left;
+}

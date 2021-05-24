@@ -1,0 +1,43 @@
+.autentification-page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 25px 26px 32px;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/background.jpg');
+}
+
+.user-form {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.user-form > input {
+    width: 300px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.field-title {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.registration-control {
+    margin: 10px auto;
+}
+
+.registration-control > button {
+    height: 40px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.registration-control > button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}

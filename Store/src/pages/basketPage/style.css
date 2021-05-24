@@ -1,0 +1,149 @@
+.basket-page {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px 25px 26px 32px;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/background.jpg');
+}
+
+.basket-contaoner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    min-height: 300px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-top: 25px solid #585370;
+    border-bottom: 25px solid #585370;
+}
+
+.item-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.item-number {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.item-short-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.item-title {
+    max-width: 300px;
+    font-size: 20px;
+}
+
+.item-code {
+    width: 300px;
+    margin: 10px 10px;
+    font-size: 15px;
+    text-align: left;
+    color: gray;
+}
+
+.label {
+    margin-top: 10px;
+    padding: 5px 10px;
+    color:#ffffff;
+    background-color: rgb(53, 165, 59);
+    border-radius: 10px;
+}
+
+.basket-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-price  {
+    width: 140px;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+.item-label {
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(129, 129, 126);
+}
+
+.price-title {
+    width: max-content;
+    margin: 10px 20px;
+    font-size: 25px;
+}
+
+.item-counter-container {
+    display: flex;
+    align-items: center;
+}
+
+.item-counter {
+    display: flex;
+    margin-left: 10px;
+}
+
+.counter-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.counter-btn {
+    width: 20px;
+    height: 30px;
+    border: none;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.counter-btn:nth-child(1) {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.counter-btn:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.delete-btn {
+    width: 40px;
+    height: 40px;
+    background: url('../../assets/img/icons/close_icon.png') no-repeat center;
+    background-size: 95%;
+    border: none;
+    border-radius: 15px;
+}
+
+.delete-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offer-btn {
+    width: max-content;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    background-color: #585370;
+}
+
+.offer-btn:hover {
+    color: rgb(53, 165, 59)
+}
