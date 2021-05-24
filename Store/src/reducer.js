@@ -5,10 +5,25 @@ const initialState = {
     categoryTitle: null,
     categoryPath: null,
     basket: [],
-    currentItem: null
+    currentItem: null,
+    serverError: false
 }
 
 export const reducer = (state = initialState, action) => {
+
+    if(action.type === "TAKE_DATA_FAILURE") {
+        return {
+            ...state,
+            serverError: true
+        }
+    }
+
+    if(action.type === "TAKE_DATA_SUCCESS") {
+        return {
+            ...state,
+            serverError: false
+        }
+    }
 
     if(action.type === "CHANGE_FIND_TITLE") {
         return {

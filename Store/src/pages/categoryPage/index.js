@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Redirect, useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
+import { NotFound } from '../../components/notFound'
 
 export const CategoryListPage = () => {
 
@@ -11,17 +12,24 @@ export const CategoryListPage = () => {
     const dispatch = useDispatch();
 
     const currentItem = useSelector(state => state.currentItem);
+    const [dataError,setDataError] = useState(false);
 
     const [categoryItems, setItems] = useState(null);
 
     const [fillters,setFilters] = useState(null);
 
     useEffect(async () => {
-        const response = await axios.get(`http://localhost:3002/category/${param.category}`);
-        const filterData = await axios.get(`http://localhost:3002/fillters/${param.category}`)
-        setItems(response.data);
-        setFilters(filterData.data);
-        dispatch({type: "SET_CATEGORY_PATH", payload: param.category})
+        try {
+            const response = await axios.get(`http://localhost:3002/category/${param.category}`);
+            const filterData = await axios.get(`http://localhost:3002/fillters/${param.category}`)
+            setItems(response.data);
+            setFilters(filterData.data);
+            dispatch({type: "SET_CATEGORY_PATH", payload: param.category});
+            setDataError(false)
+        } catch {
+            setDataError(true)
+        }
+        
     },[param,dispatch] )
 
     const buyItem = (item) => {
@@ -40,7 +48,7 @@ export const CategoryListPage = () => {
     }
 
     return <div className = "catalog-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
-        <div className = "catalog-container">
+        { !dataError && <div className = "catalog-container">
             <div className = "filter-container">
                 {fillters && fillters.map((filter,index) => <div>
                     <div className = "filter-header">
@@ -56,16 +64,17 @@ export const CategoryListPage = () => {
             </div>
             <div className = "items-container">
                 {categoryItems && categoryItems.map((item,index) => <div key = {index} className = "category-item">
-                    <p>{`${item.price} руб`}</p>
+                    <p className = "category-item-price">{`${item.price} руб`}</p>
                     <img src = {item.src}/>
-                    <p>{item.title}</p>
+                    <p className = "category-item-title">{item.title}</p>
                     <div className = "item-controll"> 
                         <button className = "show-item-btn" onClick = {() => dispatch({type: "SELECT_ITEM",payload: item})}/>
                         <button className = "buy-item-btn" onClick = {() => buyItem(item)}/>
                     </div>
                 </div>)}
             </div>
-        </div>
+        </div>}
+        {dataError && <NotFound/>}
         {currentItem && <Redirect to = {`/catalog/${param.category}/${currentItem.title}`}/>}
     </div>
 }

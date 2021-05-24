@@ -34,11 +34,30 @@
 }
 
 .category-item {
+    display: flex;
+    flex-direction: column;
     width: 220px;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
+    justify-content: space-between;
     border-radius: 15px;
     box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.category-item > img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.category-item-price {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    color: red;
+}
+
+.category-item-title {
+    margin: 10px;
 }
 
 .item-controll {

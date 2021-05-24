@@ -1,7 +1,8 @@
 import './style.css'
-import {useSelector} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { NotFound } from '../../components/notFound'
 
 /*
 <div className = "history_header-container">
@@ -15,20 +16,25 @@ import axios from 'axios'
 
 export const PurchaseHistory = () => {
 
+    const dispatch = useDispatch();
     const user = useSelector(state => state.authUser);
+    const dataError = useSelector(state => state.serverError);
 
     const [data, setData] = useState(null);
 
     useEffect(async () => {
-        const response = await axios.post('http://localhost:3002/history',user)
-        if(response.data) {
-            setData(response.data)
+        try{
+            const response = await axios.post('http://localhost:3002/history',user)
+            setData(response.data);
+            dispatch({type: "TAKE_DATA_SUCCESS"});
+        } catch (err) {
+            dispatch({type: "TAKE_DATA_FAILURE"});
         }
     },[])    
 
     return <div className = "history-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         <div className = "history-container">
-            {data && data.map(historyItem => <div key = {historyItem.id}className = "history_item-container">
+            {!dataError && data && data.map(historyItem => <div key = {historyItem.id}className = "history_item-container">
                 <p className = "hystory_date">{`Дата покупки: ${historyItem.date}`}</p>
                 {historyItem.products.map((item, index) => <div key = {`${item.title}`} className = "history_item">
                     <p className = "history_item-number">{index + 1}</p>
@@ -42,6 +48,7 @@ export const PurchaseHistory = () => {
                 </div>)}
                 <p className = "history_item_totalprice">{`Итого: ${historyItem.total_price} руб`}</p>
             </div>)}
+            {dataError && <NotFound />}
         </div>
     </div>
 }

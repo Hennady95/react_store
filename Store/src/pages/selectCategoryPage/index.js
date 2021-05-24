@@ -2,26 +2,33 @@ import './style.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { NotFound } from '../../components/notFound'
 
 export const SelectCategoryPage = () => {
 
     const dispatch = useDispatch();
 
     const [categoryItems, setCategoryItems] = useState([]);
+    const dataError = useSelector(state => state.serverError);
 
     useEffect(async () => {
-        const response = await axios.get('http://localhost:3002/category')
-        setCategoryItems(response.data);
+        try {
+            const response = await axios.get('http://localhost:3002/category')
+            setCategoryItems(response.data);
+            dispatch({type: "TAKE_DATA_SUCCESS"});
+        } catch (err) {
+            dispatch({type: "TAKE_DATA_FAILURE"});
+        }
     },[])
 
     return <div className = "category-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
-        {categoryItems && categoryItems.map((category,index) =>
+        {!dataError &&categoryItems && categoryItems.map((category,index) =>
             <Link key ={index} className = "category-container" to = {`/catalog/${category.path}`} onClick = {() => dispatch({type: "SET_CATEGORY_TITLE", payload: category.title})}>
                 <p className = "category-title">{category.title}</p>
                 <img src = {category.pictchure} className = "category-icon" />
             </Link>
         )}
-        {!categoryItems && <p>Huy</p>}
+        {dataError && < NotFound />}
     </div>
 } 

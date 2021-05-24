@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { NotFound } from '../../components/notFound'
 import './style.css'
 
 export const AboutPage = () => {
 
     const dispatch = useDispatch();
 
-    const item = useSelector(state => state.currentItem)
+    const item = useSelector(state => state.currentItem);
 
     useEffect(() => {
         return () => dispatch({type:"DELETE_ITEM"})
@@ -18,7 +19,7 @@ export const AboutPage = () => {
             <div className = "short-info">
                 <img src = {item.src} />
                 <p className = "price-title">{`${item.price} руб`}</p>
-                <button className = "basket-btn" onClick = {() => dispatch({type: "ADD_BASKET_ITEM",payload: item})}>Отправить в корзину</button>
+                <button className = "basket-btn" onClick = {() => dispatch({type: "ADD_BASKET_ITEM",payload: {...item, count: 1}})}>Отправить в корзину</button>
             </div>
             <p className = "about_information-title">Описание</p>
             <div className = "about_information-container">

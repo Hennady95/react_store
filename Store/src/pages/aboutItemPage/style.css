@@ -65,7 +65,13 @@
 }
 
 .about_pictures > img {
-    margin: 10px 0;
+    max-width: 150px;
+    max-height: 170px;
+    margin: 20px 0;
+}
+
+.about_pictures > img:hover {
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
 }
 
 .about_information {
