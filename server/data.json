@@ -1,0 +1,3888 @@
+{
+	"users": [
+		{
+			"id": 0,
+			"name": "Admin",
+			"surname": "Nesravnenniy",
+			"email": "troll80lvl@gmail.com",
+			"phone": "+375291000007",
+			"password": "Admin123",
+			"role": "root"
+		},
+		{
+			"id": 1,
+			"name": "Ignat",
+			"surname": "Perchikovich",
+			"email": "trololo@gmail.com",
+			"phone": "+375292713497",
+			"password": "Ignat123",
+			"role": "user"
+		},
+		{
+			"id": 2,
+			"phone": "+375291112233",
+			"password": "Qwe123",
+			"name": "qwe",
+			"surname": "qwe",
+			"email": "qwe@gmail.com",
+			"role": "user"
+		}
+	],
+	"products": [
+		{
+			"id": 0,
+			"category_path": "CPU",
+			"category_picture": "http://localhost:3002/CPU.png",
+			"category_title": "Процессоры",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"AMD",
+						"INTEL"
+					],
+					"value": [
+						"amd",
+						"intel"
+					]
+				},
+				{
+					"title": "Линейка",
+					"items": [
+						"Intel core i3",
+						"Intel core i5",
+						"Intel core i7",
+						"Intel core i9",
+						"AMD Ryzen 3",
+						"AMD Ryzen 5",
+						"AMD Ryzen 7",
+						"AMD Ryzen 9"
+					],
+					"value": [
+						"i3",
+						"i5",
+						"i7",
+						"i9",
+						"r3",
+						"r5",
+						"r7",
+						"r9"
+					]
+				},
+				{
+					"title": "Сокет",
+					"items": [
+						"LGA1155",
+						"LGA1151",
+						"LGA1151 v2",
+						"AM4"
+					],
+					"value": [
+						"1155",
+						"1151",
+						"1151v2",
+						"am4"
+					]
+				},
+				{
+					"title": "Колличество ядер",
+					"items": [
+						"2",
+						"4",
+						"6",
+						"8"
+					],
+					"value": [
+						2,
+						4,
+						6,
+						8
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "Intel Core i3-10100 Comet Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i3_10g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i3"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1200"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Comet Lake-S"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "4"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "UHD 630"
+								},
+								{
+									"title": "Максимальная частота графического ядра",
+									"value": "1 100 МГц"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 300 МГц"
+								},
+								{
+									"title": "Максимальная полоса пропускания памяти",
+									"value": "41.6 Гб/с"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "64 Кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "1 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "6 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i3_10g.png"
+					],
+					"code": "002354",
+					"price": 336
+				},
+				{
+					"id": 1,
+					"title": "Intel Core i3-10300 Comet Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i3_10g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i3"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1200"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Comet Lake-S"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "4"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "UHD 630"
+								},
+								{
+									"title": "Максимальная частота графического ядра",
+									"value": "1 150 МГц"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 700 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 400 МГц"
+								},
+								{
+									"title": "Максимальная полоса пропускания памяти",
+									"value": "41.6 Гб/с"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "64 Кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "1 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "6 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i3_10g.png"
+					],
+					"code": "002355",
+					"price": 336
+				},
+				{
+					"id": 2,
+					"title": "Intel Core i5-10400F Comet Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i5_10g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i5"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1200"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Comet Lake-S"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "6"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "2 900 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 300 МГц"
+								},
+								{
+									"title": "Максимальная полоса пропускания памяти",
+									"value": "41.6 Гб/с"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L3",
+									"value": "12 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i5_10g.png"
+					],
+					"code": "002356",
+					"price": 413
+				},
+				{
+					"id": 3,
+					"title": "Intel Core i5-10600K Comet Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i5_10g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i5"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1200"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Comet Lake-S"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "6"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "UHD 630"
+								},
+								{
+									"title": "Максимальная частота графического ядра",
+									"value": "1 200 МГц"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "4 100 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 800 МГц"
+								},
+								{
+									"title": "Максимальная полоса пропускания памяти",
+									"value": "41.6 Гб/с"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "64 Кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "1.5 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "12 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i5_10g.png"
+					],
+					"code": "002355",
+					"price": 336
+				},
+				{
+					"id": 4,
+					"title": "Intel Core i7-9700K BOX Coffee Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i7_9g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i7"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1151 v2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Coffee Lake"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "UHD 630"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 900 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L3",
+									"value": "12 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "95 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i7_9g.png"
+					],
+					"code": "002355",
+					"price": 842
+				},
+				{
+					"id": 5,
+					"title": "Intel Core i7-9700F BOX Coffee Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i7_9g.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i7"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1151 v2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Coffee Lake"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 000 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 700 МГц"
+								},
+								{
+									"title": "Максимальная полоса пропускания памяти",
+									"value": "41.6 Гб/с"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "512 кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "2 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "12 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "95 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Макс. объем памяти",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i7_9g.png"
+					],
+					"code": "002355",
+					"price": 651
+				},
+				{
+					"id": 6,
+					"title": "Intel Core i9-9900K Coffee Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i9.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i9"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1151 v2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Coffee Lake"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "UHD 630"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "5 000 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "512 кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "2 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "16 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "95 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i9.png"
+					],
+					"code": "002358",
+					"price": 1002
+				},
+				{
+					"id": 7,
+					"title": "Intel Core i9-9900KF Coffee Lake",
+					"category": "CPU",
+					"src": "http://localhost:3002/i9.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "Intel Core i9"
+								},
+								{
+									"title": "Сокет",
+									"value": "LGA1151 v2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Coffee Lake"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "5 000 МГц"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L3",
+									"value": "15.6 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "95 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "100 °C"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/i9.png"
+					],
+					"code": "002359",
+					"price": 855
+				},
+				{
+					"id": 8,
+					"title": "AMD Ryzen 3 3200G Picasso",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_3.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 3"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Picasso"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "4"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "12 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "есть"
+								},
+								{
+									"title": "Название графического ядра",
+									"value": "Vega 8"
+								},
+								{
+									"title": "Максимальная частота графического ядра",
+									"value": "1 250 МГц"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 000 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "94 кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "2 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "4 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "ЧМакс. рабочая температура",
+									"value": "95 °C"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "8"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_3.png"
+					],
+					"code": "002360",
+					"price": 271
+				},
+				{
+					"id": 9,
+					"title": "AMD Ryzen 3 3100 Matisse",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_3.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 3"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Matisse"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "4"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "7 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "3 900 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "256 кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "2 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "16 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_3.png"
+					],
+					"code": "002361",
+					"price": 325
+				},
+				{
+					"id": 10,
+					"title": "AMD Ryzen 5 3600 Matisse ",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_5.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 5"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Matisse"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "6"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "7 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 200 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L2",
+									"value": "3 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "32 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_5.png"
+					],
+					"code": "002362",
+					"price": 450
+				},
+				{
+					"id": 11,
+					"title": "AMD Ryzen 5 5600X",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_5.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 5"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Количество ядер",
+									"value": "6"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "7 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 700 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 600 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L2",
+									"value": "3 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "32 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_5.png"
+					],
+					"code": "002363",
+					"price": 787
+				},
+				{
+					"id": 12,
+					"title": "AMD Ryzen 7 1700 Summit Ridge",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_7.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 7"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Summit Ridge"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "14 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 000 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "3 700 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L1",
+									"value": "96 Кб"
+								},
+								{
+									"title": "Объем кэша L2",
+									"value": "4 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "16 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "Макс. рабочая температура",
+									"value": "95 °C"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_7.png"
+					],
+					"code": "002364",
+					"price": 443
+				},
+				{
+					"id": 13,
+					"title": "AMD Ryzen 7 3700X Matisse",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_7.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 7"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Ядро",
+									"value": "Matisse"
+								},
+								{
+									"title": "Количество ядер",
+									"value": "8"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "7 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 600 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 400 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L2",
+									"value": "4 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "32 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "65 Вт"
+								},
+								{
+									"title": "Количество каналов PCI Express",
+									"value": "16"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_7.png"
+					],
+					"code": "002365",
+					"price": 755
+				},
+				{
+					"id": 14,
+					"title": "AMD Ryzen 9 5900X",
+					"category": "CPU",
+					"src": "http://localhost:3002/ryzen_9.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Линейка",
+									"value": "AMD Ryzen 9"
+								},
+								{
+									"title": "Сокет",
+									"value": "AM4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЯДРО",
+							"params": [
+								{
+									"title": "Количество ядер",
+									"value": "12"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "7 нм"
+								},
+								{
+									"title": "Интегрированное графическое ядро",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ЧАСТОТА",
+							"params": [
+								{
+									"title": "Частота процессора",
+									"value": "3 700 МГц"
+								},
+								{
+									"title": "Частота с Turbo Boost",
+									"value": "4 800 МГц"
+								},
+								{
+									"title": "Количество каналов памяти",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "КЭШ",
+							"params": [
+								{
+									"title": "Объем кэша L2",
+									"value": "6 Мб"
+								},
+								{
+									"title": "Объем кэша L3",
+									"value": "64 Мб"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+							"params": [
+								{
+									"title": "Тепловыделение",
+									"value": "105 Вт"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/ryzen_9.png"
+					],
+					"code": "002367",
+					"price": 1700
+				}
+			]
+		},
+		{
+			"id": 1,
+			"category_path": "GPU",
+			"category_picture": "http://localhost:3002/video_cards.png",
+			"category_title": "Видеокарты",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "MSI GeForce GTX 1650 VENTUS XS OC",
+					"category": "GPU",
+					"src": "http://localhost:3002/1650_oc_msi_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип подключения",
+									"value": "PCI-E 16x"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВИДЕОПРОЦЕССОР",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "NVIDIA"
+								},
+								{
+									"title": "Линейка",
+									"value": "GeForce"
+								},
+								{
+									"title": "Название",
+									"value": "NVIDIA GeForce GTX 1650"
+								},
+								{
+									"title": "Частота",
+									"value": "1 740 МГц"
+								},
+								{
+									"title": "Версия PCI Express",
+									"value": "3.0"
+								},
+								{
+									"title": "Число поддерживаемых мониторов",
+									"value": "3"
+								},
+								{
+									"title": "Макс. разрешение",
+									"value": "7680x4320"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "12 нм"
+								},
+								{
+									"title": "Количество занимаемых слотов",
+									"value": "2"
+								},
+								{
+									"title": "Количество вентиляторов",
+									"value": "2"
+								},
+								{
+									"title": "TDP",
+									"value": "75 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ",
+							"params": [
+								{
+									"title": "Тип памяти",
+									"value": "GDDR5"
+								},
+								{
+									"title": "Объем памяти",
+									"value": "4 096 Мб"
+								},
+								{
+									"title": "Частота памяти",
+									"value": "8 000 МГц"
+								},
+								{
+									"title": "Шина обмена с памятью",
+									"value": "128 бит"
+								}
+							]
+						},
+						{
+							"paragraph_title": "МАТЕМАТИЧЕСКИЙ БЛОК",
+							"params": [
+								{
+									"title": "Число универсальных процессоров",
+									"value": "896"
+								},
+								{
+									"title": "Версия шейдеров",
+									"value": "6.1"
+								},
+								{
+									"title": "Версия DirectX",
+									"value": "12"
+								},
+								{
+									"title": "Версия OpenGL",
+									"value": "4.6"
+								},
+								{
+									"title": "Версия CUDA",
+									"value": "7.5"
+								},
+								{
+									"title": "Версия OpenCL",
+									"value": "1.2"
+								},
+								{
+									"title": "Vulkan",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Необходимость дополнительного питания",
+									"value": "нет"
+								},
+								{
+									"title": "Рекомендуемая мощность блока питания",
+									"value": "100 °C"
+								},
+								{
+									"title": "Ширина",
+									"value": "177 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "111 мм"
+								},
+								{
+									"title": "Толщина",
+									"value": "38 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/1650_oc_msi_1.png",
+						"http://localhost:3002/1650_oc_msi_2.png",
+						"http://localhost:3002/1650_oc_msi_3.png",
+						"http://localhost:3002/1650_oc_msi_4.png"
+					],
+					"code": "002354",
+					"price": 336
+				},
+				{
+					"id": 1,
+					"title": "MSI GeForce GTX 1650 4096MB LP OC",
+					"category": "GPU",
+					"src": "http://localhost:3002/1650_lp_msi_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип подключения",
+									"value": "PCI-E 16x"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВИДЕОПРОЦЕССОР",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "NVIDIA"
+								},
+								{
+									"title": "Линейка",
+									"value": "GeForce"
+								},
+								{
+									"title": "Название",
+									"value": "NVIDIA GeForce GTX 1650"
+								},
+								{
+									"title": "Частота",
+									"value": "1 695 МГц"
+								},
+								{
+									"title": "Версия PCI Express",
+									"value": "3.0"
+								},
+								{
+									"title": "Число поддерживаемых мониторов",
+									"value": "2"
+								},
+								{
+									"title": "Макс. разрешение",
+									"value": "7680x4320"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "12 нм"
+								},
+								{
+									"title": "Количество занимаемых слотов",
+									"value": "2"
+								},
+								{
+									"title": "Количество вентиляторов",
+									"value": "2"
+								},
+								{
+									"title": "TDP",
+									"value": "75 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ",
+							"params": [
+								{
+									"title": "Тип памяти",
+									"value": "GDDR5"
+								},
+								{
+									"title": "Объем памяти",
+									"value": "4 096 Мб"
+								},
+								{
+									"title": "Частота памяти",
+									"value": "8 000 МГц"
+								},
+								{
+									"title": "Шина обмена с памятью",
+									"value": "128 бит"
+								}
+							]
+						},
+						{
+							"paragraph_title": "МАТЕМАТИЧЕСКИЙ БЛОК",
+							"params": [
+								{
+									"title": "Число универсальных процессоров",
+									"value": "896"
+								},
+								{
+									"title": "Версия шейдеров",
+									"value": "6.1"
+								},
+								{
+									"title": "Версия DirectX",
+									"value": "12"
+								},
+								{
+									"title": "Версия OpenGL",
+									"value": "4.6"
+								},
+								{
+									"title": "Версия CUDA",
+									"value": "7.5"
+								},
+								{
+									"title": "Версия OpenCL",
+									"value": "1.2"
+								},
+								{
+									"title": "Vulkan",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Необходимость дополнительного питания",
+									"value": "нет"
+								},
+								{
+									"title": "Рекомендуемая мощность блока питания",
+									"value": "100 °C"
+								},
+								{
+									"title": "Ширина",
+									"value": "168 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "105 мм"
+								},
+								{
+									"title": "Толщина",
+									"value": "37 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/1650_lp_msi_1.png",
+						"http://localhost:3002/1650_lp_msi_2.png",
+						"http://localhost:3002/1650_lp_msi_3.png"
+					],
+					"code": "003355",
+					"price": 856
+				},
+				{
+					"id": 2,
+					"title": "GIGABYTE GeForce GTX 1660 OC",
+					"category": "GPU",
+					"src": "http://localhost:3002/1660_gigabute_oc_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип подключения",
+									"value": "PCI-E 16x"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВИДЕОПРОЦЕССОР",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "NVIDIA"
+								},
+								{
+									"title": "Линейка",
+									"value": "GeForce"
+								},
+								{
+									"title": "Название",
+									"value": "NVIDIA GeForce GTX 1660"
+								},
+								{
+									"title": "Частота",
+									"value": "1 830 МГц"
+								},
+								{
+									"title": "Версия PCI Express",
+									"value": "3.0"
+								},
+								{
+									"title": "Число поддерживаемых мониторов",
+									"value": "4"
+								},
+								{
+									"title": "Макс. разрешение",
+									"value": "7680x4320"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "12 нм"
+								},
+								{
+									"title": "Количество занимаемых слотов",
+									"value": "2"
+								},
+								{
+									"title": "Количество вентиляторов",
+									"value": "2"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ",
+							"params": [
+								{
+									"title": "Тип памяти",
+									"value": "GDDR5"
+								},
+								{
+									"title": "Объем памяти",
+									"value": "6 144 Мб"
+								},
+								{
+									"title": "Частота памяти",
+									"value": "8 002 МГц"
+								},
+								{
+									"title": "Шина обмена с памятью",
+									"value": "192 бит"
+								}
+							]
+						},
+						{
+							"paragraph_title": "МАТЕМАТИЧЕСКИЙ БЛОК",
+							"params": [
+								{
+									"title": "Число универсальных процессоров",
+									"value": "1 408"
+								},
+								{
+									"title": "Версия шейдеров",
+									"value": "6.1"
+								},
+								{
+									"title": "Версия DirectX",
+									"value": "12"
+								},
+								{
+									"title": "Версия OpenGL",
+									"value": "4.6"
+								},
+								{
+									"title": "Версия CUDA",
+									"value": "7.5"
+								},
+								{
+									"title": "Версия OpenCL",
+									"value": "1.2"
+								},
+								{
+									"title": "Vulkan",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Необходимость дополнительного питания",
+									"value": "есть"
+								},
+								{
+									"title": "Рекомендуемая мощность блока питания",
+									"value": "450 Вт"
+								},
+								{
+									"title": "Ширина",
+									"value": "224 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "121 мм"
+								},
+								{
+									"title": "Толщина",
+									"value": "40 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/1660_gigabute_oc_1.png",
+						"http://localhost:3002/1660_gigabute_oc_2.png",
+						"http://localhost:3002/1660_gigabute_oc_3.png"
+					],
+					"code": "003356",
+					"price": 1690
+				},
+				{
+					"id": 2,
+					"title": "GIGABYTE GeForce GTX 1660 MINI ITX OC",
+					"category": "GPU",
+					"src": "http://localhost:3002/1660_gigabute_oc_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип подключения",
+									"value": "PCI-E 16x"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВИДЕОПРОЦЕССОР",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "NVIDIA"
+								},
+								{
+									"title": "Линейка",
+									"value": "GeForce"
+								},
+								{
+									"title": "Название",
+									"value": "NVIDIA GeForce GTX 1660"
+								},
+								{
+									"title": "Частота",
+									"value": "1 800 МГц"
+								},
+								{
+									"title": "Версия PCI Express",
+									"value": "3.0"
+								},
+								{
+									"title": "Число поддерживаемых мониторов",
+									"value": "4"
+								},
+								{
+									"title": "Макс. разрешение",
+									"value": "7680x4320"
+								},
+								{
+									"title": "Техпроцесс",
+									"value": "12 нм"
+								},
+								{
+									"title": "Количество занимаемых слотов",
+									"value": "2"
+								},
+								{
+									"title": "Количество вентиляторов",
+									"value": "1"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ",
+							"params": [
+								{
+									"title": "Тип памяти",
+									"value": "GDDR5"
+								},
+								{
+									"title": "Объем памяти",
+									"value": "6 144 Мб"
+								},
+								{
+									"title": "Частота памяти",
+									"value": "8 002 МГц"
+								},
+								{
+									"title": "Шина обмена с памятью",
+									"value": "192 бит"
+								}
+							]
+						},
+						{
+							"paragraph_title": "МАТЕМАТИЧЕСКИЙ БЛОК",
+							"params": [
+								{
+									"title": "Число универсальных процессоров",
+									"value": "1 408"
+								},
+								{
+									"title": "Версия шейдеров",
+									"value": "6.1"
+								},
+								{
+									"title": "Версия DirectX",
+									"value": "12"
+								},
+								{
+									"title": "Версия OpenGL",
+									"value": "4.6"
+								},
+								{
+									"title": "Версия CUDA",
+									"value": "7.5"
+								},
+								{
+									"title": "Версия OpenCL",
+									"value": "1.2"
+								},
+								{
+									"title": "Vulkan",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Необходимость дополнительного питания",
+									"value": "есть"
+								},
+								{
+									"title": "Рекомендуемая мощность блока питания",
+									"value": "450 Вт"
+								},
+								{
+									"title": "Ширина",
+									"value": "170 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "121 мм"
+								},
+								{
+									"title": "Толщина",
+									"value": "36.5 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/1660_gigabute_oc_1.png",
+						"http://localhost:3002/1660_gigabute_oc_2.png",
+						"http://localhost:3002/1660_gigabute_oc_3.png"
+					],
+					"code": "003357",
+					"price": 1490
+				}
+			]
+		},
+		{
+			"id": 2,
+			"category_path": "MotherBoards",
+			"category_picture": "http://localhost:3002/matherboards.png",
+			"category_title": "Материнские платы",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "GIGABYTE B450 AORUS ELITE (rev. 1.0)",
+					"category": "MotherBoards",
+					"src": "http://localhost:3002/b450_gigabyte_aorus_1.png",
+					"description": [
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ПРОЦЕССОРА",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "AMD"
+								},
+								{
+									"title": "Socket",
+									"value": "AM4"
+								},
+								{
+									"title": "Количество сокетов",
+									"value": "1"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ПАМЯТИ",
+							"params": [
+								{
+									"title": "Тип",
+									"value": "DDR4 DIMM"
+								},
+								{
+									"title": "Макс. объем",
+									"value": "64 Гб"
+								},
+								{
+									"title": "Количество слотов",
+									"value": "4"
+								},
+								{
+									"title": "Частота памяти минимальная",
+									"value": "2 133 МГц"
+								},
+								{
+									"title": "Частота памяти максимальная",
+									"value": "3 200 МГц"
+								},
+								{
+									"title": "Поддержка ECC",
+									"value": "ECC/non-ECC"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ЧИПСЕТА",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "AMD"
+								},
+								{
+									"title": "Название",
+									"value": "AMD B450"
+								},
+								{
+									"title": "SLI/CrossFire",
+									"value": "CrossFire"
+								},
+								{
+									"title": "BIOS",
+									"value": "AMI"
+								}
+							]
+						},
+						{
+							"paragraph_title": "СЛОТЫ РАСШИРЕНИЯ",
+							"params": [
+								{
+									"title": "PCI-E 16x",
+									"value": "2"
+								},
+								{
+									"title": "PCI-E 1x",
+									"value": "1"
+								},
+								{
+									"title": "PCI Express 2.0",
+									"value": "поддерживается"
+								},
+								{
+									"title": "PCI Express 3.0",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "SATA",
+							"params": [
+								{
+									"title": "Режим работы SATA RAID",
+									"value": "1, 10"
+								},
+								{
+									"title": "Общее количество разъемов SATA",
+									"value": "6"
+								},
+								{
+									"title": "Количество разъемов SATA 6Gb/s",
+									"value": "6"
+								},
+								{
+									"title": "Количество слотов M.2",
+									"value": "2"
+								},
+								{
+									"title": "Тип интерфейса M.2",
+									"value": "PCI-E/SATA 3.0"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/b450_gigabyte_aorus_1.png",
+						"http://localhost:3002/b450_gigabyte_aorus_2.png",
+						"http://localhost:3002/b450_gigabyte_aorus_3.png"
+					],
+					"code": "004357",
+					"price": 250
+				},
+				{
+					"id": 1,
+					"title": "MSI Z490-A PRO",
+					"category": "MotherBoards",
+					"src": "http://localhost:3002/z490_msi_1.png",
+					"description": [
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ПРОЦЕССОРА",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "Intel"
+								},
+								{
+									"title": "Socket",
+									"value": "LGA1200"
+								},
+								{
+									"title": "Количество сокетов",
+									"value": "1"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ПАМЯТИ",
+							"params": [
+								{
+									"title": "Тип",
+									"value": "DDR4 DIMM"
+								},
+								{
+									"title": "Макс. объем",
+									"value": "128 Гб"
+								},
+								{
+									"title": "Количество слотов",
+									"value": "4"
+								},
+								{
+									"title": "Частота памяти минимальная",
+									"value": "2 133 МГц"
+								},
+								{
+									"title": "Частота памяти максимальная",
+									"value": "2 933 МГц"
+								},
+								{
+									"title": "Поддержка ECC",
+									"value": "нет"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ХАРАКТЕРИСТИКИ ЧИПСЕТА",
+							"params": [
+								{
+									"title": "Производитель",
+									"value": "Intel"
+								},
+								{
+									"title": "Название",
+									"value": "Intel Z490 Express"
+								},
+								{
+									"title": "SLI/CrossFire",
+									"value": "CrossFire X"
+								},
+								{
+									"title": "BIOS",
+									"value": "AMI"
+								}
+							]
+						},
+						{
+							"paragraph_title": "СЛОТЫ РАСШИРЕНИЯ",
+							"params": [
+								{
+									"title": "PCI-E 16x",
+									"value": "2"
+								},
+								{
+									"title": "PCI-E 1x",
+									"value": "3"
+								},
+								{
+									"title": "PCI Express 3.0",
+									"value": "поддерживается"
+								}
+							]
+						},
+						{
+							"paragraph_title": "SATA",
+							"params": [
+								{
+									"title": "Режим работы SATA RAID",
+									"value": "1, 10, 5"
+								},
+								{
+									"title": "Общее количество разъемов SATA",
+									"value": "6"
+								},
+								{
+									"title": "Количество разъемов SATA 6Gb/s",
+									"value": "6"
+								},
+								{
+									"title": "Количество слотов M.2",
+									"value": "2"
+								},
+								{
+									"title": "Тип интерфейса M.2",
+									"value": "PCI-E/SATA 3.0"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/z490_msi_1.png",
+						"http://localhost:3002/z490_msi_2.png",
+						"http://localhost:3002/z490_msi_3.png"
+					],
+					"code": "004358",
+					"price": 467
+				}
+			]
+		},
+		{
+			"id": 3,
+			"category_path": "Memory",
+			"category_picture": "http://localhost:3002/operation_memory.png",
+			"category_title": "Оперативная память",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "HyperX HX432C16FB3K2/16",
+					"category": "Memory",
+					"src": "http://localhost:3002/hyper_memory.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип",
+									"value": "DDR4"
+								},
+								{
+									"title": "Форм-фактор",
+									"value": "DIMM"
+								},
+								{
+									"title": "Объем одного модуля",
+									"value": "8 Гб"
+								},
+								{
+									"title": "Количество модулей",
+									"value": "2"
+								},
+								{
+									"title": "Количество рангов",
+									"value": "1"
+								},
+								{
+									"title": "Тактовая частота",
+									"value": "3 200 МГц"
+								},
+								{
+									"title": "Пропускная способность",
+									"value": "25 600 Мб/с"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТАЙМИНГИ",
+							"params": [
+								{
+									"title": "CL",
+									"value": "16"
+								},
+								{
+									"title": "tRCD",
+									"value": "18"
+								},
+								{
+									"title": "tRP",
+									"value": "18"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Напряжение питания",
+									"value": "1.35 В"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/hyper_memory.png"
+					],
+					"code": "005354",
+					"price": 273
+				},
+				{
+					"id": 1,
+					"title": "Kingston KVR26N19S8/8",
+					"category": "Memory",
+					"src": "http://localhost:3002/kingston_memoty.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Тип",
+									"value": "DDR4"
+								},
+								{
+									"title": "Форм-фактор",
+									"value": "DIMM"
+								},
+								{
+									"title": "Объем одного модуля",
+									"value": "8 Гб"
+								},
+								{
+									"title": "Количество модулей",
+									"value": "1"
+								},
+								{
+									"title": "Количество рангов",
+									"value": "1"
+								},
+								{
+									"title": "Тактовая частота",
+									"value": "2 666 МГц"
+								},
+								{
+									"title": "Пропускная способность",
+									"value": "21 300 Мб/с"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ТАЙМИНГИ",
+							"params": [
+								{
+									"title": "CL",
+									"value": "19"
+								},
+								{
+									"title": "tRCD",
+									"value": "19"
+								},
+								{
+									"title": "tRP",
+									"value": "19"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Напряжение питания",
+									"value": "1.2 В"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/kingston_memoty.png"
+					],
+					"code": "005355",
+					"price": 130
+				}
+			]
+		},
+		{
+			"id": 4,
+			"category_path": "Cooling",
+			"category_picture": "http://localhost:3002/cooller.png",
+			"category_title": "Охлаждение",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "Deepcool GAMMAXX 300",
+					"category": "Cooling",
+					"src": "http://localhost:3002/deepcool_gammax_300_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Сокет",
+									"value": "LGA 775, AM2, AM2+, SP3, LGA 1366, LGA 1356, FM1, AM4, AM3+, FM2, LGA 1156, LGA 1150, LGA 1155, LGA 1151-v2, FM2+, AM3, LGA 1151"
+								},
+								{
+									"title": "Назначение",
+									"value": "для процессора"
+								},
+								{
+									"title": "Регулятор оборотов",
+									"value": "отсутствует"
+								},
+								{
+									"title": "Максимальная рассеиваемая мощность",
+									"value": "125 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "УРОВЕНЬ ШУМА",
+							"params": [
+								{
+									"title": "Минимальный",
+									"value": "17.8 дБ"
+								},
+								{
+									"title": "Максимальный",
+									"value": "21 дБ"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Тип коннектора",
+									"value": "4-pin PWM"
+								},
+								{
+									"title": "Количество тепловых трубок",
+									"value": "3"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗМЕРЫ И ВЕС КУЛЕРА",
+							"params": [
+								{
+									"title": "Глубина",
+									"value": "76 мм"
+								},
+								{
+									"title": "Ширина",
+									"value": "121 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "136 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "429 г"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/deepcool_gammax_300_1.png",
+						"http://localhost:3002/deepcool_gammax_300_2.png"
+					],
+					"code": "006354",
+					"price": 40
+				},
+				{
+					"id": 1,
+					"title": "Arctic Freezer 34 eSports DUO",
+					"category": "Cooling",
+					"src": "http://localhost:3002/Arctic_Freezer_34_eSports_DUO_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Сокет",
+									"value": "AM4, LGA 1156, LGA 2011-3 (Square ILM), LGA 1150, LGA 2066, LGA 2011 (Square ILM), LGA 1155, LGA 1151-v2, LGA 1151"
+								},
+								{
+									"title": "Назначение",
+									"value": "для процессора"
+								},
+								{
+									"title": "Регулятор оборотов",
+									"value": "отсутствует"
+								},
+								{
+									"title": "Максимальная рассеиваемая мощность",
+									"value": "210 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "СКОРОСТЬ ВРАЩЕНИЯ",
+							"params": [
+								{
+									"title": "Минимальная",
+									"value": "200 об/мин"
+								},
+								{
+									"title": "Максимальная",
+									"value": "2 100 об/мин"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Тип коннектора",
+									"value": "4-pin PWM"
+								},
+								{
+									"title": "Количество тепловых трубок",
+									"value": "4"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗМЕРЫ И ВЕС КУЛЕРА",
+							"params": [
+								{
+									"title": "Глубина",
+									"value": "103 мм"
+								},
+								{
+									"title": "Ширина",
+									"value": "124 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "157 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "764 г"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/Arctic_Freezer_34_eSports_DUO_1.png",
+						"http://localhost:3002/Arctic_Freezer_34_eSports_DUO_2.png"
+					],
+					"code": "006354",
+					"price": 40
+				}
+			]
+		},
+		{
+			"id": 5,
+			"category_path": "PowerBlock",
+			"category_picture": "http://localhost:3002/power_block.png",
+			"category_title": "Блоки питания",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "be quiet! System Power 9 600W",
+					"category": "PowerBlock",
+					"src": "http://localhost:3002/be_quiet_SP_9.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Форм-фактор",
+									"value": "ATX"
+								},
+								{
+									"title": "Мощность",
+									"value": "600 Вт"
+								},
+								{
+									"title": "PFC",
+									"value": "активный"
+								},
+								{
+									"title": "Стандарт эффективности",
+									"value": "80 PLUS Bronze"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗЪЕМЫ",
+							"params": [
+								{
+									"title": "Тип разъема для материнской платы",
+									"value": "20+4 pin"
+								},
+								{
+									"title": "Число разъемов 4+4 pin CPU",
+									"value": "1"
+								},
+								{
+									"title": "Число разъемов 6+2-pin PCI-E",
+									"value": "4"
+								},
+								{
+									"title": "Число разъемов 4-pin IDE",
+									"value": "2"
+								},
+								{
+									"title": "Число разъемов 15-pin SATA",
+									"value": "6"
+								}
+							]
+						},
+						{
+							"paragraph_title": "УРОВЕНЬ ШУМА",
+							"params": [
+								{
+									"title": "Минимальный",
+									"value": "9 дБА"
+								},
+								{
+									"title": "Максимальный",
+									"value": "31 дБА"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Отстегивающиеся кабели",
+									"value": "нет"
+								},
+								{
+									"title": "Защита от перенапряжения",
+									"value": "есть"
+								},
+								{
+									"title": "Защита от перегрузки",
+									"value": "есть"
+								},
+								{
+									"title": "Защита от короткого замыкания",
+									"value": "есть"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ГАБАРИТЫ",
+							"params": [
+								{
+									"title": "Ширина",
+									"value": "150 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "86 мм"
+								},
+								{
+									"title": "Глубина",
+									"value": "140 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/be_quiet_SP_9.png"
+					],
+					"code": "006357",
+					"price": 150
+				},
+				{
+					"id": 1,
+					"title": "FSP Group ATX-500PNR 500W",
+					"category": "PowerBlock",
+					"src": "http://localhost:3002/fsp_pnr_500W_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Форм-фактор",
+									"value": "ATX"
+								},
+								{
+									"title": "Мощность",
+									"value": "500 Вт"
+								},
+								{
+									"title": "PFC",
+									"value": "активный"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗЪЕМЫ",
+							"params": [
+								{
+									"title": "Тип разъема для материнской платы",
+									"value": "20+4 pin"
+								},
+								{
+									"title": "Число разъемов 4+4 pin CPU",
+									"value": "1"
+								},
+								{
+									"title": "Число разъемов 6+2-pin PCI-E",
+									"value": "4"
+								},
+								{
+									"title": "Число разъемов 8-pin PCI-E",
+									"value": "1"
+								},
+								{
+									"title": "Число разъемов 4-pin IDE",
+									"value": "5"
+								},
+								{
+									"title": "Число разъемов 15-pin SATA",
+									"value": "2"
+								},
+								{
+									"title": "Число разъемов 4-pin Floppy",
+									"value": "1"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Отстегивающиеся кабели",
+									"value": "нет"
+								},
+								{
+									"title": "Защита от перенапряжения",
+									"value": "есть"
+								},
+								{
+									"title": "Защита от перегрузки",
+									"value": "нет"
+								},
+								{
+									"title": "Защита от короткого замыкания",
+									"value": "есть"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ГАБАРИТЫ",
+							"params": [
+								{
+									"title": "Ширина",
+									"value": "150 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "86 мм"
+								},
+								{
+									"title": "Глубина",
+									"value": "140 мм"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/fsp_pnr_500W_1.png",
+						"http://localhost:3002/fsp_pnr_500W_2.png"
+					],
+					"code": "006355",
+					"price": 98
+				}
+			]
+		},
+		{
+			"id": 6,
+			"category_path": "HardDrive",
+			"category_picture": "http://localhost:3002/hard_drive.png",
+			"category_title": "Жёские диски",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "Seagate ST4000VN008",
+					"category": "HardDrive",
+					"src": "http://localhost:3002/Seagate_ST4000VN008_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Назначение",
+									"value": "для настольного компьютера и сервера"
+								},
+								{
+									"title": "Тип",
+									"value": "HDD"
+								},
+								{
+									"title": "Форм-фактор",
+									"value": "3.5''"
+								},
+								{
+									"title": "Объем жесткого диска",
+									"value": "4 000 Гб"
+								},
+								{
+									"title": "Объем буфера",
+									"value": "64 Мб"
+								},
+								{
+									"title": "Скорость вращения",
+									"value": "5 900 rpm"
+								},
+								{
+									"title": "Внешняя скорость передачи данных",
+									"value": "600 Мб/с"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ИНТЕРФЕЙСЫ",
+							"params": [
+								{
+									"title": "SATA",
+									"value": "SATA 6Gb/s"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВРЕМЕННЫЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Время наработки на отказ",
+									"value": "1 000 000 ч"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Потребляемая мощность",
+									"value": "4.8 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "УРОВЕНЬ ШУМА",
+							"params": [
+								{
+									"title": "Работа",
+									"value": "25 дБ"
+								},
+								{
+									"title": "Простой",
+									"value": "23 дБ"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ГАБАРИТЫ",
+							"params": [
+								{
+									"title": "Ширина",
+									"value": "101.6 мм"
+								},
+								{
+									"title": "Длинна",
+									"value": "146.99 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "26.11 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "610 г"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/Seagate_ST4000VN008_1.png",
+						"http://localhost:3002/Seagate_ST4000VN008_2.png"
+					],
+					"code": "001354",
+					"price": 373
+				},
+				{
+					"id": 1,
+					"title": "Western Digital WD10EZEX",
+					"category": "HardDrive",
+					"src": "http://localhost:3002/WD_Blue_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Назначение",
+									"value": "для настольного компьютера и сервера"
+								},
+								{
+									"title": "Тип",
+									"value": "HDD"
+								},
+								{
+									"title": "Форм-фактор",
+									"value": "3.5''"
+								},
+								{
+									"title": "Объем жесткого диска",
+									"value": "1 000 Гб"
+								},
+								{
+									"title": "Объем буфера",
+									"value": "64 Мб"
+								},
+								{
+									"title": "Скорость вращения",
+									"value": "7 200 rpm"
+								},
+								{
+									"title": "Внешняя скорость передачи данных",
+									"value": "600 Мб/с"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ИНТЕРФЕЙСЫ",
+							"params": [
+								{
+									"title": "SATA",
+									"value": "SATA 6Gb/s"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Потребляемая мощность",
+									"value": "6.8 Вт"
+								}
+							]
+						},
+						{
+							"paragraph_title": "УРОВЕНЬ ШУМА",
+							"params": [
+								{
+									"title": "Работа",
+									"value": "30 дБ"
+								},
+								{
+									"title": "Простой",
+									"value": "29 дБ"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ГАБАРИТЫ",
+							"params": [
+								{
+									"title": "Ширина",
+									"value": "101.6 мм"
+								},
+								{
+									"title": "Длинна",
+									"value": "147 мм"
+								},
+								{
+									"title": "Высота",
+									"value": "25.4 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "450 г"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/WD_Blue_1.png"
+					],
+					"code": "001354",
+					"price": 373
+				}
+			]
+		},
+		{
+			"id": 7,
+			"category_path": "SSD",
+			"category_picture": "http://localhost:3002/ssd.png",
+			"category_title": "SSD",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "Crucial CT240BX500SSD1",
+					"category": "SSD",
+					"src": "http://localhost:3002/Crucial_CT240BX500SSD1_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Назначение",
+									"value": "для ноутбука и настольного компьютера"
+								},
+								{
+									"title": "Тип флэш-памяти",
+									"value": "TLC 3D NAND"
+								},
+								{
+									"title": "Контроллер",
+									"value": "Silicon Motion SM2258XT"
+								},
+								{
+									"title": "Объем",
+									"value": "240 Гб"
+								},
+								{
+									"title": "TRIM",
+									"value": "есть"
+								},
+								{
+									"title": "Суммарное число записываемых байтов (TBW)",
+									"value": "80 Тб"
+								},
+								{
+									"title": "Внешняя скорость передачи данных",
+									"value": "600 Мб/с"
+								},
+								{
+									"title": "Время наработки на отказ",
+									"value": "1 500 000 ч"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ИНТЕРФЕЙСЫ",
+							"params": [
+								{
+									"title": "SATA",
+									"value": "SATA 6Gb/s"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВРЕМЕННЫЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Время наработки на отказ",
+									"value": "1 000 000 ч"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Рабочая температура( максимальная )",
+									"value": "70 °C"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/Crucial_CT240BX500SSD1_1.png",
+						"http://localhost:3002/Crucial_CT240BX500SSD1_2.png"
+					],
+					"code": "000354",
+					"price": 98
+				},
+				{
+					"id": 0,
+					"title": "Samsung 500 GB MZ 77E500BW",
+					"category": "SSD",
+					"src": "http://localhost:3002/Samsung_500_GB_MZ-77E500BW_1.png",
+					"description": [
+						{
+							"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Назначение",
+									"value": "для ноутбука и настольного компьютера"
+								},
+								{
+									"title": "Объем",
+									"value": "500 Гб"
+								},
+								{
+									"title": "TRIM",
+									"value": "есть"
+								},
+								{
+									"title": "Суммарное число записываемых байтов (TBW)",
+									"value": "300 Тб"
+								},
+								{
+									"title": "Скорость записи",
+									"value": "530 Мб/с"
+								},
+								{
+									"title": "Скорость чтения",
+									"value": "560 Мб/с"
+								},
+								{
+									"title": "Время наработки на отказ",
+									"value": "1 500 000 ч"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ИНТЕРФЕЙСЫ",
+							"params": [
+								{
+									"title": "SATA",
+									"value": "SATA 6Gb/s"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ВРЕМЕННЫЕ ХАРАКТЕРИСТИКИ",
+							"params": [
+								{
+									"title": "Время наработки на отказ",
+									"value": "1 000 000 ч"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Потребляемая мощность",
+									"value": "2.2 Вт"
+								},
+								{
+									"title": "Рабочая температура( максимальная )",
+									"value": "70 °C"
+								},
+								{
+									"title": "Высота",
+									"value": "6.8 мм"
+								},
+								{
+									"title": "Длина",
+									"value": "100 мм"
+								},
+								{
+									"title": "Ширина",
+									"value": "69.85 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "45 г"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/Samsung_500_GB_MZ-77E500BW_1.png",
+						"http://localhost:3002/Samsung_500_GB_MZ-77E500BW_2.png",
+						"http://localhost:3002/Samsung_500_GB_MZ-77E500BW_3.png"
+					],
+					"code": "000355",
+					"price": 189
+				}
+			]
+		},
+		{
+			"id": 8,
+			"category_path": "BodyPC",
+			"category_picture": "http://localhost:3002/body_PC.png",
+			"category_title": "Корпуса",
+			"fillters": [
+				{
+					"title": "Производитель",
+					"items": [
+						"ASUS",
+						"LENOVO",
+						"APPLE",
+						"HP"
+					],
+					"value": [
+						"asus",
+						"lenovo",
+						"apple",
+						"hp"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": 0,
+					"title": "be quiet! Pure Base 500DX",
+					"category": "BodyPC",
+					"src": "http://localhost:3002/BQ_PB_500DX_1.png",
+					"description": [
+						{
+							"paragraph_title": "КОНСТРУКЦИЯ",
+							"params": [
+								{
+									"title": "Форм-фактор",
+									"value": "mATX, ATX, Mini-ITX"
+								},
+								{
+									"title": "Типоразмер",
+									"value": "Midi-Tower"
+								},
+								{
+									"title": "Материал корпуса",
+									"value": "сталь"
+								},
+								{
+									"title": "Наличие окна на боковой стенке",
+									"value": "есть"
+								},
+								{
+									"title": "Количество слотов расширения",
+									"value": "7"
+								},
+								{
+									"title": "Максимальная высота процессорного кулера",
+									"value": "190 мм"
+								},
+								{
+									"title": "Механизм открывания",
+									"value": "снимаются две стенки"
+								}
+							]
+						},
+						{
+							"paragraph_title": "БЛОК ПИТАНИЯ",
+							"params": [
+								{
+									"title": "Расположение БП",
+									"value": "горизонтальное"
+								},
+								{
+									"title": "Блок питания внизу",
+									"value": "да"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ОХЛАЖДЕНИЕ",
+							"params": [
+								{
+									"title": "Возможность установки системы жидкостного охлаждения",
+									"value": "да"
+								},
+								{
+									"title": "Съемный воздушный фильтр",
+									"value": "да"
+								},
+								{
+									"title": "Количество встроенных вентиляторов",
+									"value": "3"
+								},
+								{
+									"title": "Размер корпусных вентиляторов",
+									"value": "140 мм"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Цвет корпуса",
+									"value": "черный"
+								},
+								{
+									"title": "Цвет светодиодной подсветки",
+									"value": "RGB"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗМЕРЫ",
+							"params": [
+								{
+									"title": "Высота",
+									"value": "463 мм"
+								},
+								{
+									"title": "Ширина",
+									"value": "232 мм"
+								},
+								{
+									"title": "Глубина",
+									"value": "450 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "7.8 кг"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/BQ_PB_500DX_1.png",
+						"http://localhost:3002/BQ_PB_500DX_2.png",
+						"http://localhost:3002/BQ_PB_500DX_3.png",
+						"http://localhost:3002/BQ_PB_500DX_4.png"
+					],
+					"code": "111354",
+					"price": 280
+				},
+				{
+					"id": 1,
+					"title": "AeroCool Cylon Black",
+					"category": "BodyPC",
+					"src": "http://localhost:3002/AeroCool_Cylon_Black_1.png",
+					"description": [
+						{
+							"paragraph_title": "КОНСТРУКЦИЯ",
+							"params": [
+								{
+									"title": "Форм-фактор",
+									"value": "mATX, ATX, Mini-ITX"
+								},
+								{
+									"title": "Типоразмер",
+									"value": "Midi-Tower"
+								},
+								{
+									"title": "Материал корпуса",
+									"value": "сталь"
+								},
+								{
+									"title": "Наличие окна на боковой стенке",
+									"value": "есть"
+								},
+								{
+									"title": "Количество слотов расширения",
+									"value": "7"
+								},
+								{
+									"title": "Максимальная высота процессорного кулера",
+									"value": "155 мм"
+								},
+								{
+									"title": "Максимальная длина видеокарты",
+									"value": "371 мм"
+								},
+								{
+									"title": "Механизм открывания",
+									"value": "снимаются две стенки"
+								}
+							]
+						},
+						{
+							"paragraph_title": "БЛОК ПИТАНИЯ",
+							"params": [
+								{
+									"title": "Расположение БП",
+									"value": "горизонтальное"
+								},
+								{
+									"title": "Блок питания внизу",
+									"value": "да"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ОХЛАЖДЕНИЕ",
+							"params": [
+								{
+									"title": "Возможность установки системы жидкостного охлаждения",
+									"value": "да"
+								},
+								{
+									"title": "Съемный воздушный фильтр",
+									"value": "да"
+								},
+								{
+									"title": "Количество встроенных вентиляторов",
+									"value": "1"
+								},
+								{
+									"title": "Количество дополнительно устанавливаемых вентиляторов",
+									"value": "3"
+								},
+								{
+									"title": "Размер корпусных вентиляторов",
+									"value": "120 мм"
+								}
+							]
+						},
+						{
+							"paragraph_title": "ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ",
+							"params": [
+								{
+									"title": "Цвет корпуса",
+									"value": "черный"
+								},
+								{
+									"title": "Цвет светодиодной подсветки",
+									"value": "RGB"
+								}
+							]
+						},
+						{
+							"paragraph_title": "РАЗМЕРЫ",
+							"params": [
+								{
+									"title": "Высота",
+									"value": "459 мм"
+								},
+								{
+									"title": "Ширина",
+									"value": "198 мм"
+								},
+								{
+									"title": "Глубина",
+									"value": "413 мм"
+								},
+								{
+									"title": "Вес",
+									"value": "3.8 кг"
+								}
+							]
+						}
+					],
+					"picture": [
+						"http://localhost:3002/AeroCool_Cylon_Black_1.png",
+						"http://localhost:3002/AeroCool_Cylon_Black_2.png",
+						"http://localhost:3002/AeroCool_Cylon_Black_3.png",
+						"http://localhost:3002/AeroCool_Cylon_Black_4.png"
+					],
+					"code": "111357",
+					"price": 84
+				}
+			]
+		}
+	],
+	"buy_history": [
+		{
+			"user_id": 0,
+			"buy_history": [
+				{
+					"id": 0,
+					"products": [
+						{
+							"title": "qwe",
+							"count": 2,
+							"price": 65.5
+						}
+					],
+					"date": "02/02/2020",
+					"total_price": 123,
+					"delivery": false,
+					"adress_delivery": ""
+				}
+			]
+		},
+		{
+			"user_id": 1,
+			"buy_history": [
+				{
+					"id": 0,
+					"products": [
+						{
+							"id": 0,
+							"category": "CPU",
+							"title": "Intel Core i3-10100 Comet Lake",
+							"code": "002354",
+							"count": 2,
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336
+						},
+						{
+							"id": 1,
+							"category": "CPU",
+							"title": "Intel Core i3-10300 Comet Lake",
+							"code": "002355",
+							"count": 1,
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336
+						},
+						{
+							"id": 0,
+							"category": "GPU",
+							"title": "MSI GeForce GTX 1650 VENTUS XS OC",
+							"code": "002354",
+							"count": 1,
+							"src": "http://localhost:3002/1650_oc_msi_1.png",
+							"price": 336
+						}
+					],
+					"date": "20.5.2021",
+					"total_price": 1344,
+					"delivery": false,
+					"adress_delivery": ""
+				}
+			]
+		},
+		{
+			"user_id": 2,
+			"buy_history": [
+				{
+					"id": 0,
+					"products": [
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"code": "002354",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 1
+						},
+						{
+							"id": 1,
+							"title": "Intel Core i3-10300 Comet Lake",
+							"code": "002355",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 1
+						}
+					],
+					"date": "6-4-2021",
+					"total_price": 672,
+					"delivery": false,
+					"adress_delivery": ""
+				},
+				{
+					"id": 1,
+					"products": [
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"code": "002354",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 1
+						},
+						{
+							"id": 1,
+							"title": "Intel Core i3-10300 Comet Lake",
+							"code": "002355",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 1
+						}
+					],
+					"date": "6-4-2021",
+					"total_price": 672,
+					"delivery": false,
+					"adress_delivery": ""
+				}
+			]
+		}
+	]
+}
