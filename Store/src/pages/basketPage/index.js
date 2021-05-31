@@ -10,6 +10,8 @@ export const BasketPage = () => {
     const signIn = useSelector(state => state.signIn);
     const basket = useSelector(state => state.basket);
     const user = useSelector(state => state.authUser);
+    const [delivery, setDelivery] = useState(false);
+    const [adress, setAdress] = useState('');
 
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -26,8 +28,8 @@ export const BasketPage = () => {
             products: basket,
             date: `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`,
             total_price: totalPrice,
-            delivery: false,
-            adress_delivery: ''
+            delivery,
+            adress_delivery: adress
         }
         if(basket.length !== 0) {
             await axios.post('http://localhost:3002/buyItem',basketData);
@@ -74,6 +76,14 @@ export const BasketPage = () => {
                     </div>
                 </div>
             </div>)}
+            <div className = "basket_delivery-container">
+                <div className = "basket_delivery_checkbox">
+                    <input type = "checkbox" onChange = {() => setDelivery(!delivery)}/>
+                    <p className = "price-title">Нужна ли доставка?</p>
+                </div>
+                {delivery && <p className = "price-title">Введите адрес доставки:</p>}
+                {delivery && <input type = "text" onChange = {(event) => setAdress(event.target.value)}/>}
+            </div>
             <p className = "price-title">{`Итого: ${totalPrice} руб`}</p>
             <button className = "offer-btn" onClick = {sendOffer}>Оформить заказ</button>
         </div>

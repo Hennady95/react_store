@@ -147,3 +147,31 @@
 .offer-btn:hover {
     color: rgb(53, 165, 59)
 }
+
+.basket_delivery-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.basket_delivery_checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.basket_delivery_checkbox > input {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.basket_delivery-container > input {
+    width: 350px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    outline: none;
+}
