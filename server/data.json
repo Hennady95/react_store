@@ -90,13 +90,15 @@
 						"2",
 						"4",
 						"6",
-						"8"
+						"8",
+						"12"
 					],
 					"value": [
 						2,
 						4,
 						6,
-						8
+						8,
+						12
 					]
 				}
 			],
@@ -105,6 +107,7 @@
 					"id": 0,
 					"title": "Intel Core i3-10100 Comet Lake",
 					"category": "CPU",
+					"tags": ["intel","i3","lga1200","4"],
 					"src": "http://localhost:3002/i3_10g.png",
 					"description": [
 						{
@@ -219,6 +222,7 @@
 					"id": 1,
 					"title": "Intel Core i3-10300 Comet Lake",
 					"category": "CPU",
+					"tags": ["intel","i3","lga1200","4"],
 					"src": "http://localhost:3002/i3_10g.png",
 					"description": [
 						{
@@ -333,6 +337,7 @@
 					"id": 2,
 					"title": "Intel Core i5-10400F Comet Lake",
 					"category": "CPU",
+					"tags": ["intel","i5","lga1200","6"],
 					"src": "http://localhost:3002/i5_10g.png",
 					"description": [
 						{
@@ -431,6 +436,7 @@
 					"id": 3,
 					"title": "Intel Core i5-10600K Comet Lake",
 					"category": "CPU",
+					"tags": ["intel","i5","lga1200","6"],
 					"src": "http://localhost:3002/i5_10g.png",
 					"description": [
 						{
@@ -545,6 +551,7 @@
 					"id": 4,
 					"title": "Intel Core i7-9700K BOX Coffee Lake",
 					"category": "CPU",
+					"tags": ["intel","i7","lga1151v2","8"],
 					"src": "http://localhost:3002/i7_9g.png",
 					"description": [
 						{
@@ -643,6 +650,7 @@
 					"id": 5,
 					"title": "Intel Core i7-9700F BOX Coffee Lake",
 					"category": "CPU",
+					"tags": ["intel","i7","lga1151v2","8"],
 					"src": "http://localhost:3002/i7_9g.png",
 					"description": [
 						{
@@ -749,6 +757,7 @@
 					"id": 6,
 					"title": "Intel Core i9-9900K Coffee Lake",
 					"category": "CPU",
+					"tags": ["intel","i9","lga1151v2","8"],
 					"src": "http://localhost:3002/i9.png",
 					"description": [
 						{
@@ -851,6 +860,7 @@
 					"id": 7,
 					"title": "Intel Core i9-9900KF Coffee Lake",
 					"category": "CPU",
+					"tags": ["intel","i9","lga1151v2","8"],
 					"src": "http://localhost:3002/i9.png",
 					"description": [
 						{
@@ -937,6 +947,7 @@
 					"id": 8,
 					"title": "AMD Ryzen 3 3200G Picasso",
 					"category": "CPU",
+					"tags": ["amd","r3","am4","4"],
 					"src": "http://localhost:3002/ryzen_3.png",
 					"description": [
 						{
@@ -1043,6 +1054,7 @@
 					"id": 9,
 					"title": "AMD Ryzen 3 3100 Matisse",
 					"category": "CPU",
+					"tags": ["amd","r3","am4","4"],
 					"src": "http://localhost:3002/ryzen_3.png",
 					"description": [
 						{
@@ -1133,6 +1145,7 @@
 					"id": 10,
 					"title": "AMD Ryzen 5 3600 Matisse ",
 					"category": "CPU",
+					"tags": ["amd","r5","am4","6"],
 					"src": "http://localhost:3002/ryzen_5.png",
 					"description": [
 						{
@@ -1223,6 +1236,7 @@
 					"id": 11,
 					"title": "AMD Ryzen 5 5600X",
 					"category": "CPU",
+					"tags": ["amd","r5","am4","6"],
 					"src": "http://localhost:3002/ryzen_5.png",
 					"description": [
 						{
@@ -1305,6 +1319,7 @@
 					"id": 12,
 					"title": "AMD Ryzen 7 1700 Summit Ridge",
 					"category": "CPU",
+					"tags": ["amd","r7","am4","8"],
 					"src": "http://localhost:3002/ryzen_7.png",
 					"description": [
 						{
@@ -1399,6 +1414,7 @@
 					"id": 13,
 					"title": "AMD Ryzen 7 3700X Matisse",
 					"category": "CPU",
+					"tags": ["amd","r7","am4","8"],
 					"src": "http://localhost:3002/ryzen_7.png",
 					"description": [
 						{
@@ -1489,6 +1505,7 @@
 					"id": 14,
 					"title": "AMD Ryzen 9 5900X",
 					"category": "CPU",
+					"tags": ["amd","r9","am4","12"],
 					"src": "http://localhost:3002/ryzen_9.png",
 					"description": [
 						{
@@ -3868,19 +3885,162 @@
 							"count": 1
 						},
 						{
-							"id": 1,
-							"title": "Intel Core i3-10300 Comet Lake",
-							"code": "002355",
-							"categoryPath": "CPU",
+							"id": 0,
+							"title": "GIGABYTE B450 AORUS ELITE (rev. 1.0)",
+							"code": "004357",
+							"categoryPath": "MotherBoards",
+							"src": "http://localhost:3002/b450_gigabyte_aorus_1.png",
+							"price": 250,
+							"count": 1
+						},
+						{
+							"id": 0,
+							"title": "MSI GeForce GTX 1650 VENTUS XS OC",
+							"code": "002354",
+							"categoryPath": "GPU",
+							"src": "http://localhost:3002/1650_oc_msi_1.png",
+							"price": 336,
+							"count": 1
+						},
+						{
+							"id": 0,
+							"title": "HyperX HX432C16FB3K2/16",
+							"code": "005354",
+							"categoryPath": "Memory",
+							"src": "http://localhost:3002/hyper_memory.png",
+							"price": 273,
+							"count": 2
+						}
+					],
+					"date": "27-5-2021",
+					"total_price": 1468,
+					"delivery": false,
+					"adress_delivery": ""
+				}
+			]
+		},
+		{
+			"user_id": 3,
+			"buy_history": [
+				{
+					"id": 0,
+					"products": [
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"category": "CPU",
 							"src": "http://localhost:3002/i3_10g.png",
+							"description": [
+								{
+									"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+									"params": [
+										{
+											"title": "Линейка",
+											"value": "Intel Core i3"
+										},
+										{
+											"title": "Сокет",
+											"value": "LGA1200"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЯДРО",
+									"params": [
+										{
+											"title": "Ядро",
+											"value": "Comet Lake-S"
+										},
+										{
+											"title": "Количество ядер",
+											"value": "4"
+										},
+										{
+											"title": "Техпроцесс",
+											"value": "14 нм"
+										},
+										{
+											"title": "Интегрированное графическое ядро",
+											"value": "есть"
+										},
+										{
+											"title": "Название графического ядра",
+											"value": "UHD 630"
+										},
+										{
+											"title": "Максимальная частота графического ядра",
+											"value": "1 100 МГц"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЧАСТОТА",
+									"params": [
+										{
+											"title": "Частота процессора",
+											"value": "3 600 МГц"
+										},
+										{
+											"title": "Частота с Turbo Boost",
+											"value": "4 300 МГц"
+										},
+										{
+											"title": "Максимальная полоса пропускания памяти",
+											"value": "41.6 Гб/с"
+										},
+										{
+											"title": "Количество каналов памяти",
+											"value": "2"
+										}
+									]
+								},
+								{
+									"paragraph_title": "КЭШ",
+									"params": [
+										{
+											"title": "Объем кэша L1",
+											"value": "64 Кб"
+										},
+										{
+											"title": "Объем кэша L2",
+											"value": "1 Мб"
+										},
+										{
+											"title": "Объем кэша L3",
+											"value": "6 Мб"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+									"params": [
+										{
+											"title": "Тепловыделение",
+											"value": "65 Вт"
+										},
+										{
+											"title": "ЧМакс. рабочая температура",
+											"value": "100 °C"
+										},
+										{
+											"title": "Макс. объем памяти",
+											"value": "128 Гб"
+										},
+										{
+											"title": "Количество каналов PCI Express",
+											"value": "16"
+										}
+									]
+								}
+							],
+							"picture": [
+								"http://localhost:3002/i3_10g.png"
+							],
+							"code": "002354",
 							"price": 336,
 							"count": 1
 						}
-					],
-					"date": "6-4-2021",
-					"total_price": 672,
-					"delivery": false,
-					"adress_delivery": ""
+					]
 				}
 			]
 		}

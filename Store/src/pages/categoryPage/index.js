@@ -18,6 +18,8 @@ export const CategoryListPage = () => {
 
     const [fillters,setFilters] = useState(null);
 
+    const [currentFillters, setCurrentFilters] = useState(null);
+
     useEffect(async () => {
         try {
             const response = await axios.get(`http://localhost:3002/category/${param.category}`);
@@ -25,7 +27,16 @@ export const CategoryListPage = () => {
             setItems(response.data);
             setFilters(filterData.data);
             dispatch({type: "SET_CATEGORY_PATH", payload: param.category});
-            setDataError(false)
+            setDataError(false);
+            let defaultCurrentFillters =[];
+            for(let i = 0; i < filterData.data.length; i++) {
+                let subArrValue = [];
+                for(let j = 0; j < filterData.data[i].items.length; j++) {
+                    subArrValue.push('');
+                }
+                defaultCurrentFillters.push(subArrValue);
+            }
+            setCurrentFilters(defaultCurrentFillters);
         } catch {
             setDataError(true)
         }
@@ -47,20 +58,51 @@ export const CategoryListPage = () => {
         dispatch({ type: "ADD_BASKET_ITEM", payload: newBasketItem});
     }
 
+    const searchProducts = async () => {
+        const data = await axios.get(`http://localhost:3002/category/${param.category}`);
+        const newData = data.data.reduce((newArrProducts,product) => {
+            let countFillters = 0;
+            let successFillter = 0;
+            for(let i = 0; i < product.tags.length; i++) {
+                const newString = currentFillters[i].reduce((str,item) => item !== '' ? str += `${item} ` : str,'')
+                if(newString.length != 0) {
+                    countFillters += 1;
+                    if(RegExp(`${product.tags[i]}`).test(newString)) {
+                        successFillter += 1;
+                    }
+                }
+            }
+            if(countFillters === successFillter) {
+                newArrProducts.push(product);
+            }
+            return newArrProducts
+        }, []);
+        setItems(newData);
+    }
+
     return <div className = "catalog-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         { !dataError && <div className = "catalog-container">
             <div className = "filter-container">
-                {fillters && fillters.map((filter,index) => <div>
+                {fillters && fillters.map((filter,mainIndex) => <div key ={`${filter.title}`}>
                     <div className = "filter-header">
                         <p className = "filter-title">{filter.title}</p>
                     </div>
                     <div className = "filter-items">
-                        {filter.items.map((item,index) =>  <div className = "item-filter">
-                            <input type = 'checkbox' value = {filter.value[index]}/>
+                        {filter.items.map((item,index) =>  <div className = "item-filter" key = {`${item.title}-${index}`}>
+                            <input type = 'checkbox' value = {filter.value[index]} onChange = { (event) => {
+                                let newArr = [...currentFillters]
+                                if(event.target.checked) {
+                                    newArr[mainIndex][index] = event.target.value; 
+                                } else {
+                                    newArr[mainIndex][index] = '';
+                                }
+                                setCurrentFilters(newArr);
+                            } }/>
                             <p className = "filter-item-title">{item}</p>
                         </div>)}
                     </div>
                 </div>)}
+                <button className = "fillter-btn" onClick = {searchProducts}>Отфильтровать</button>
             </div>
             <div className = "items-container">
                 {categoryItems && categoryItems.map((item,index) => <div key = {index} className = "category-item">

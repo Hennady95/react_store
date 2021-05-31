@@ -9,7 +9,7 @@ export const BasketPage = () => {
 
     const signIn = useSelector(state => state.signIn);
     const basket = useSelector(state => state.basket);
-    const user = useSelector(state => state.authUser)
+    const user = useSelector(state => state.authUser);
 
     const [totalPrice, setTotalPrice] = useState(0);
 
@@ -24,13 +24,17 @@ export const BasketPage = () => {
         const basketData = {
             id,
             products: basket,
-            date: `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`,
+            date: `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`,
             total_price: totalPrice,
             delivery: false,
             adress_delivery: ''
         }
-        await axios.post('http://localhost:3002/buyItem',basketData);
-        dispatch({type: "CLEAR_BASKET"})
+        if(basket.length !== 0) {
+            await axios.post('http://localhost:3002/buyItem',basketData);
+            dispatch({type: "CLEAR_BASKET"})
+        } else {
+            alert('Вы ничего не положили в корзину')
+        }
     }
 
     const sendOffer = () => {
@@ -47,7 +51,7 @@ export const BasketPage = () => {
                 {console.log(item)}
                 <div className = "basket-item">
                     <p className ="item-number">{index+1}</p>
-                    <img src = {item.src} alt = {item.title} style = {{width: '150px'}}/>
+                    <img src = {item.src} alt = {item.title} style = {{width: '130px'}}/>
                     <div className = "item-short-info">
                         <p className = "item-title">{item.title}</p>
                         <p className = "item-code">{`Код: ${item.code}`}</p>

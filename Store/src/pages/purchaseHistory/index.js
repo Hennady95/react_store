@@ -38,7 +38,7 @@ export const PurchaseHistory = () => {
                 <p className = "hystory_date">{`Дата покупки: ${historyItem.date}`}</p>
                 {historyItem.products.map((item, index) => <div key = {`${item.title}`} className = "history_item">
                     <p className = "history_item-number">{index + 1}</p>
-                    <img src = {item.src}/>
+                    <img src = {item.src} alt = {item.title} style = {{ maxWidth: '150px', maxHeight: '150px'}}/>
                     <div className = "history_item-info">
                         <p className = "history_item-title">{item.title}</p>
                         <p className = "history_item-code">{`Код товара: ${item.code}`}</p>
