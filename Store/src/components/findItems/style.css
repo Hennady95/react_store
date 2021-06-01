@@ -8,10 +8,12 @@
 
 .find_result-container {
     margin: 10px 0 0 230px;
+    padding: 20px;
     width: 600px;
     max-height: 300px;
     background-color: #ffffff;
     overflow: scroll;
+    border-radius: 10px;
 }
 
 .find-item-container {

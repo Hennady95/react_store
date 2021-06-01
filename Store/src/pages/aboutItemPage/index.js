@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NotFound } from '../../components/notFound'
 import './style.css'
@@ -9,11 +9,22 @@ export const AboutPage = () => {
 
     const item = useSelector(state => state.currentItem);
 
+    const [showImage, setShowImage] = useState(false);
+    const [imagePath, setImagePath] = useState('');
+
     useEffect(() => {
         return () => dispatch({type:"DELETE_ITEM"})
     }, [dispatch])
 
     return <div className = "about-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
+        <div className = "shadow-image" style = {showImage ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick = {() => {
+                setShowImage(false);
+                setImagePath('');
+                }}>
+            <div className = "image-container">
+                <img src = {imagePath} className = "selected-image" />  
+            </div>
+        </div>
         <div className = "about-item-container">
             <p className = "about-title">{item.title}</p>
             <div className = "short-info">
@@ -24,7 +35,10 @@ export const AboutPage = () => {
             <p className = "about_information-title">Описание</p>
             <div className = "about_information-container">
                 <div className = "about_pictures">
-                    {item.picture.map(picture => <img src = {picture}/>)}
+                    {item.picture.map(picture => <img src = {picture} onClick = {() => {
+                        setShowImage(true);
+                        setImagePath(picture);
+                        }}/>)}
                 </div>
                 <div className = "about_information">
                     {item.description.map(characteristic => <div className = "characteristic-container">

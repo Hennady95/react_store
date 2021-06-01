@@ -1,11 +1,13 @@
 .header {
     display: flex;
-    width: 1200px;
-    height: 130px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
+    box-shadow: inset 0px -6px 6px -7px rgb(0, 0, 0);
 }
 
 .header_logo {
@@ -13,6 +15,10 @@
     font-size: 40px;
     color: #4A4177;
     border-right: 2px solid #4A4177;
+}
+
+.header_logo > sup {
+    font-size: 30px;
 }
 
 .header_search-container {
@@ -63,7 +69,7 @@
     width: 20px;
     height: 20px;
     right: 0;
-    bottom: -5px;
+    bottom: 0px;
     text-align: center;
     background-color: rgb(163, 13, 20);
     color: rgb(238, 235, 235);

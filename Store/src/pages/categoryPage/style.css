@@ -46,7 +46,7 @@
 }
 
 .category-item > img {
-    width: 150px;
+    max-width: 150px;
     margin: 0 auto;
 }
 
