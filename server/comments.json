@@ -1,0 +1,64 @@
+{
+	"CPU": [
+		{
+			"product_id": 0,
+			"product_category": "CPU",
+			"user_nickname": "qwe qwe",
+			"comment_text": "qwe",
+			"date": "3-5-2021| 14:19"
+		},
+		{
+			"product_id": 0,
+			"product_category": "CPU",
+			"user_nickname": "qwe qwe",
+			"comment_text": "Test",
+			"date": "3-5-2021| 14:18"
+		}
+	],
+	"GPU": [
+		{
+			"product_id": 0,
+			"product_category": "GPU",
+			"user_nickname": "qwe qwe",
+			"comment_text": "qwewqe",
+			"date": "3-5-2021| 14:23"
+		},
+		{
+			"product_id": 0,
+			"product_category": "GPU",
+			"user_nickname": "qwe qwe",
+			"comment_text": "test video comment",
+			"date": "3-5-2021| 14:23"
+		}
+	],
+	"MotherBoards": [
+		{
+			"product_id": 0,
+			"product_category": "MotherBoards",
+			"user_nickname": "qwe qwe",
+			"comment_text": "qwe",
+			"date": "3-5-2021| 14:24"
+		}
+	],
+	"Memory": [
+		{
+			"product_id": 0,
+			"product_category": "Memory",
+			"user_nickname": "qwe qwe",
+			"comment_text": "asd",
+			"date": "3-5-2021| 14:26"
+		},
+		{
+			"product_id": 0,
+			"product_category": "Memory",
+			"user_nickname": "qwe qwe",
+			"comment_text": "qwe",
+			"date": "3-5-2021| 14:26"
+		}
+	],
+    "Cooling": [],
+    "PowerBlock": [],
+    "HardDrive": [],
+    "SSD": [],
+    "BodyPC": []
+}

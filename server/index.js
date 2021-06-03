@@ -3,6 +3,7 @@ const server = new Koa();
 const PORT = 3002;
 
 let DB = require('./data.json')
+let COMMENTS = require('./comments.json')
 
 const Router = require('@koa/router');
 const bodyParser = require('koa-bodyparser');
@@ -172,6 +173,26 @@ router.post('/buyItem', (ctx) => {
       
     ]
   }*/
+})
+
+//get comments for item
+
+router.post('/getComments', (ctx) => {
+  const {id, category} = ctx.request.body;
+  const getComment = COMMENTS[category].reduce( (findComments, item) => {
+    if(item.product_id === id){
+      findComments.push(item)
+    }
+    return findComments
+  }, [])
+  ctx.body = getComment;
+})
+
+router.post('/sendComment', (ctx) => {
+  const { product_category} = ctx.request.body;
+  COMMENTS[product_category].unshift(ctx.request.body);
+  fs.writeFileSync('comments.json', JSON.stringify(COMMENTS, null, '\t'));
+  ctx.body = 'Комментарий добавлен';
 })
 
 // logger
