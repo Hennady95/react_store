@@ -16,8 +16,12 @@
 }
 
 .about-title {
-    font-size: 35px;
     margin: 10px 30px;
+    font-family: 'Comfotraa', 'Roboto';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 35px;
+    color: #4A4177;
     text-align: left;
 }
 
@@ -29,23 +33,33 @@
 }
 
 .price-title {
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #51478a;
 }
 
 .basket-btn {
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 500;
     font-size: 15px;
     border: none;
     border-radius: 10px;
 }
 
 .basket-btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    background-color: #585370;
 }
 
 .about_information-title {
     margin: 20px 0 0 0;
     padding: 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
     font-size: 25px;
     color: #ffffff;
     text-align: left;
@@ -86,7 +100,11 @@
 
 .characteristics-title {
     padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     font-size: 20px;
+    letter-spacing: 2px;
+    color:#ffffff;
     background-color: #666183;
     text-align: left;
 }
@@ -95,6 +113,8 @@
     display: flex;
     padding: 10px 20px;
     width: 100%;
+    font-family: 'Comfortaa', 'Roboto';
+    font-weight: 400;
     border-bottom: 2px solid #666183;
 }
 
@@ -136,12 +156,16 @@
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
+    font-family: 'Comfotraa', 'Roboto';
+    font-weight: 700;
+    font-style: italic;
     text-align: left;
 }
 
 .comments-title {
     padding: 20px;
     font-size: 30px;
+    color: #4A4177;
     font-weight: bold;
     font-style: italic;
 }
@@ -161,6 +185,7 @@
 .user-comment {
     width: 100%;
     padding: 10px;
+    margin-top: 15px;
     font-size: 20px;
     border-radius: 10px;
     resize: none;
@@ -171,11 +196,15 @@
     max-width: max-content;
     margin-top: 10px;
     padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 500;
     border-radius: 5px;
 }
 
 .send-comment-btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    background-color: #585370;
 }
 
 .no-comments {
@@ -186,18 +215,17 @@
 }
 
 .comment-item_container {
-    width: 100%;
+    width: 95%;
     padding:20px;
-    margin-bottom: 10px;
-    border: 2px solid black;
+    margin: 5px auto;
+    border: 2px solid #666183;
     border-radius: 10px;
-    box-shadow: 5px 5px 6px -2px black;
+    box-shadow: 5px 5px 6px -2px #666183;
 }
 
 .comment-header {
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid red;
     font-style: italic;
 }
 
@@ -205,17 +233,76 @@
     padding: 5px;
     margin-right: 10px;
     font-size: 20px;
-    color: gray;
-    border-right: 2px solid red;
+    color: rgb(121, 117, 117);
 }
 
 .comment-nickname {
     padding: 5px;
     font-size: 18px;
+    border-left: 2px solid #666183;
 }
 
 .comment-text {
     padding: 10px;
     font-size: 15px;
     font-style: normal;
+}
+
+
+
+.rating-area {
+	overflow: hidden;
+    width: max-content;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
 }

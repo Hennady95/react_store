@@ -2,24 +2,19 @@
 	"CPU": [
 		{
 			"product_id": 0,
+			"marks": 5,
+			"product_category": "CPU",
+			"user_nickname": "qwe qwe",
+			"comment_text": "вёрстка заебца!)))",
+			"date": "7-5-2021| 11:13"
+		},
+		{
+			"product_id": 0,
+			"marks": 4,
 			"product_category": "CPU",
 			"user_nickname": "qwe qwe",
 			"comment_text": "hueta",
-			"date": "3-5-2021| 15:48"
-		},
-		{
-			"product_id": 0,
-			"product_category": "CPU",
-			"user_nickname": "qwe qwe",
-			"comment_text": "qwe",
-			"date": "3-5-2021| 14:19"
-		},
-		{
-			"product_id": 0,
-			"product_category": "CPU",
-			"user_nickname": "qwe qwe",
-			"comment_text": "Test",
-			"date": "3-5-2021| 14:18"
+			"date": "5-5-2021| 14:41"
 		}
 	],
 	"GPU": [],

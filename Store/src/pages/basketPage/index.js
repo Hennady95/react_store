@@ -79,12 +79,12 @@ export const BasketPage = () => {
             <div className = "basket_delivery-container">
                 <div className = "basket_delivery_checkbox">
                     <input type = "checkbox" onChange = {() => setDelivery(!delivery)}/>
-                    <p className = "price-title">Нужна ли доставка?</p>
+                    <p className = "basket_price-title">Нужна ли доставка?</p>
                 </div>
-                {delivery && <p className = "price-title">Введите адрес доставки:</p>}
-                {delivery && <input type = "text" onChange = {(event) => setAdress(event.target.value)}/>}
+                {delivery && <p className = "basket_price-title">Введите адрес доставки:</p>}
+                {delivery && <input type = "text" onChange = {(event) => setAdress(event.target.value)} className = "adress-field"/>}
             </div>
-            <p className = "price-title">{`Итого: ${totalPrice} руб`}</p>
+            <p className = "basket_price-title">{`Итого: ${totalPrice} руб`}</p>
             <button className = "offer-btn" onClick = {sendOffer}>Оформить заказ</button>
         </div>
     </div>

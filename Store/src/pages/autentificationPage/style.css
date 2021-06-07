@@ -13,11 +13,15 @@
     padding: 20px;
     background-color: #ffffff;
     border-radius: 15px;
+    font-family: 'Comfortaa', 'Roboto';
+    font-weight: bold;
 }
 
 .user-form > input {
     width: 300px;
     padding: 5px;
+    font-family: 'Comfortaa', 'Roboto';
+    font-weight: 400;
     font-size: 15px;
     border-radius: 5px;
 }

@@ -12,6 +12,9 @@
 .header-link {
     margin: 0 10px;
     font-size: 25px;
+    font-family: 'Comfortaa','Roboto';
+    font-weight: bold;
+    letter-spacing: 2px;
     text-decoration: none;
     color: #FFFFFF;
 }

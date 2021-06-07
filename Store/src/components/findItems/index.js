@@ -26,16 +26,20 @@ export const FindItems = ({show}) => {
         }
     }, [findTitle])
 
-    return <div className = "find-shadow" onClick = {() => {
+    return <div className = "find-shadow" onClick = {(event) => {
         setFindData(null);
         show(false);
         dispatch({ type: 'DELETE_FIND_TITLE'});
     }}>
-        <div className = "find_result-container">
-            {findData && findData.map((item, index) => <div className = "find-item-container" key = {`${index}-${item.tiltle}`} >
+        <div className = "find_result-container"  onClick = {(event) => event.stopPropagation()}>
+            {findData && findData.map((item, index) => <div className = "find-item-container" key = {`${index}-${item.tiltle}`}>
                     <img src = {item.src}/> 
                     <div>
-                        <Link className = "fint_item-title" to = {`/catalog/${item.category}/${item.title}`} onClick = {() => dispatch({ type: "SELECT_ITEM", payload: item})}>{item.title}</Link>
+                        <Link className = "fint_item-title" to = {`/catalog/${item.category}/${item.title}`} onClick = {() => {
+                            show(false);
+                            dispatch({ type: "SELECT_ITEM", payload: item})
+                            }
+                        }>{item.title}</Link>
                         <p className = "find_item-code">{`Код товара: ${item.code}`}</p>
                     </div>
                     <div>

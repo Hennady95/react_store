@@ -25,7 +25,8 @@
 }
 
 .category-title {
-    font-family: Comfortaa, cursive;
+    font-family: 'Comfortaa', 'Roboto', cursive;
+    font-weight: 400;
     font-size: 21px;
     color:#676280;
 }

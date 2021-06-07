@@ -78,10 +78,13 @@
     color: rgb(129, 129, 126);
 }
 
-.price-title {
+.basket_price-title {
     width: max-content;
     margin: 10px 20px;
-    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
 }
 
 .item-counter-container {
@@ -170,8 +173,9 @@
     width: 350px;
     border: none;
     padding: 5px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 2px solid black;
+    font-style: italic;
+    border-bottom: 2px solid #585370;
     outline: none;
 }

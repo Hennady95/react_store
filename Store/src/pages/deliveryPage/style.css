@@ -22,16 +22,22 @@
 .condition-title {
     width: 400px;
     padding: 10px;
+    font-family: 'Comfotraa', 'Roboto';
+    font-style: italic;
+    font-weight: 600;
     font-size: 25px;
-    font-weight: bold;
+    color: #4A4177;
 }
 
 .condition-list {
     padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     font-size: 15px;
 }
 
 .condition-list > li {
     width: 400px;
+    padding: 5px;
     text-align: left;
 }
