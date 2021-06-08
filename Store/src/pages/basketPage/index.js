@@ -33,7 +33,8 @@ export const BasketPage = () => {
         }
         if(basket.length !== 0) {
             await axios.post('http://localhost:3002/buyItem',basketData);
-            dispatch({type: "CLEAR_BASKET"})
+            dispatch({type: "CLEAR_BASKET"});
+            alert('Покупка совершена');
         } else {
             alert('Вы ничего не положили в корзину')
         }
@@ -76,14 +77,15 @@ export const BasketPage = () => {
                     </div>
                 </div>
             </div>)}
-            <div className = "basket_delivery-container">
+            {basket.length !== 0 && <div className = "basket_delivery-container">
                 <div className = "basket_delivery_checkbox">
                     <input type = "checkbox" onChange = {() => setDelivery(!delivery)}/>
                     <p className = "basket_price-title">Нужна ли доставка?</p>
                 </div>
                 {delivery && <p className = "basket_price-title">Введите адрес доставки:</p>}
                 {delivery && <input type = "text" onChange = {(event) => setAdress(event.target.value)} className = "adress-field"/>}
-            </div>
+            </div>}
+            {basket.length === 0 && <p className = "basket_price-title">Корзина пуста</p>}
             <p className = "basket_price-title">{`Итого: ${totalPrice} руб`}</p>
             <button className = "offer-btn" onClick = {sendOffer}>Оформить заказ</button>
         </div>

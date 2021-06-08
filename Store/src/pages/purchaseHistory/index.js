@@ -9,13 +9,15 @@ export const PurchaseHistory = () => {
     const dispatch = useDispatch();
     const user = useSelector(state => state.authUser);
     const dataError = useSelector(state => state.serverError);
-
+    const [emptyHistory, setEmptyHistory] = useState(false);
     const [data, setData] = useState(null);
 
     useEffect(async () => {
         try{
             const response = await axios.post('http://localhost:3002/history',user)
             setData(response.data);
+            if(response.data.length ===0)
+             setEmptyHistory(true);
             dispatch({type: "TAKE_DATA_SUCCESS"});
         } catch (err) {
             dispatch({type: "TAKE_DATA_FAILURE"});
@@ -41,6 +43,7 @@ export const PurchaseHistory = () => {
                 <p className = "history_item_totalprice">{`Итого: ${historyItem.total_price} руб`}</p>
             </div>)}
             {dataError && <NotFound />}
+            {emptyHistory && <p className = "history_item-title">История пуста</p>}
         </div>
     </div>
 }
