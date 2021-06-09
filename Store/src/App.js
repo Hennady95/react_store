@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 
 import {Header} from './components/header'
 import { HeaderNavigation } from './components/headerNavigation'
@@ -16,13 +17,11 @@ import { PurchaseHistory } from './pages/purchaseHistory'
 
 import { reducer } from './reducer'
 
-//установить react-redux
-//:category/:product'
 function App() {
   return (
     <div className="App">
       <BrowserRouter >
-        <Provider store = {createStore(reducer)}>
+        <Provider store = {createStore(reducer,applyMiddleware(thunk))}>
             <Header/>
             <HeaderNavigation/>
             <Switch>
