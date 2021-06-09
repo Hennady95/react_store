@@ -12,17 +12,20 @@ export const PurchaseHistory = () => {
     const [emptyHistory, setEmptyHistory] = useState(false);
     const [data, setData] = useState(null);
 
-    useEffect(async () => {
-        try{
-            const response = await axios.post('http://localhost:3002/history',user)
-            setData(response.data);
-            if(response.data.length ===0)
-             setEmptyHistory(true);
-            dispatch({type: "TAKE_DATA_SUCCESS"});
-        } catch (err) {
-            dispatch({type: "TAKE_DATA_FAILURE"});
+    useEffect(() => {
+        const getData = async () => {
+            try{
+                const response = await axios.post('http://localhost:3002/history',user)
+                setData(response.data);
+                if(response.data.length ===0)
+                 setEmptyHistory(true);
+                dispatch({type: "TAKE_DATA_SUCCESS"});
+            } catch (err) {
+                dispatch({type: "TAKE_DATA_FAILURE"});
+            }
         }
-    },[])    
+        getData();
+    },[dispatch, user])    
 
     return <div className = "history-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         <div className = "history-container">

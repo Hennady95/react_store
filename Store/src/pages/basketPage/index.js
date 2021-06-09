@@ -50,8 +50,7 @@ export const BasketPage = () => {
 
     return <div className = "basket-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         <div className = "basket-contaoner">
-            {basket && basket.map((item,index) => <div className = "item-container">
-                {console.log(item)}
+            {basket && basket.map((item,index) => <div className = "item-container" key = {item.title}>
                 <div className = "basket-item">
                     <p className ="item-number">{index+1}</p>
                     <img src = {item.src} alt = {item.title} style = {{width: '130px'}}/>

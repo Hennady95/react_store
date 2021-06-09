@@ -20,27 +20,29 @@ export const CategoryListPage = () => {
 
     const [currentFillters, setCurrentFilters] = useState(null);
 
-    useEffect(async () => {
-        try {
-            const response = await axios.get(`http://localhost:3002/category/${param.category}`);
-            const filterData = await axios.get(`http://localhost:3002/fillters/${param.category}`)
-            setItems(response.data);
-            setFilters(filterData.data);
-            dispatch({type: "SET_CATEGORY_PATH", payload: param.category});
-            setDataError(false);
-            let defaultCurrentFillters =[];
-            for(let i = 0; i < filterData.data.length; i++) {
-                let subArrValue = [];
-                for(let j = 0; j < filterData.data[i].items.length; j++) {
-                    subArrValue.push('');
+    useEffect(() => {
+        const getData = async() => {
+            try {
+                const response = await axios.get(`http://localhost:3002/category/${param.category}`);
+                const filterData = await axios.get(`http://localhost:3002/fillters/${param.category}`)
+                setItems(response.data);
+                setFilters(filterData.data);
+                dispatch({type: "SET_CATEGORY_PATH", payload: param.category});
+                setDataError(false);
+                let defaultCurrentFillters =[];
+                for(let i = 0; i < filterData.data.length; i++) {
+                    let subArrValue = [];
+                    for(let j = 0; j < filterData.data[i].items.length; j++) {
+                        subArrValue.push('');
+                    }
+                    defaultCurrentFillters.push(subArrValue);
                 }
-                defaultCurrentFillters.push(subArrValue);
+                setCurrentFilters(defaultCurrentFillters);
+            } catch {
+                setDataError(true)
             }
-            setCurrentFilters(defaultCurrentFillters);
-        } catch {
-            setDataError(true)
         }
-        
+        getData();
     },[param,dispatch] )
 
     const buyItem = (item) => {
@@ -65,7 +67,7 @@ export const CategoryListPage = () => {
             let successFillter = 0;
             for(let i = 0; i < product.tags.length; i++) {
                 const newString = currentFillters[i].reduce((str,item) => item !== '' ? str += `${item} ` : str,'')
-                if(newString.length != 0) {
+                if(newString.length !== 0) {
                     countFillters += 1;
                     if(RegExp(`${product.tags[i]}`).test(newString)) {
                         successFillter += 1;
@@ -107,7 +109,7 @@ export const CategoryListPage = () => {
             <div className = "items-container">
                 {categoryItems && categoryItems.map((item,index) => <div key = {index} className = "category-item">
                     <p className = "category-item-price">{`${item.price} руб`}</p>
-                    <img src = {item.src}/>
+                    <img src = {item.src} alt = {item.title}/>
                     <p className = "category-item-title">{item.title}</p>
                     <div className = "item-controll"> 
                         <button className = "show-item-btn" onClick = {() => dispatch({type: "SELECT_ITEM",payload: item})}/>

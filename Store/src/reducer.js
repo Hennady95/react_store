@@ -70,7 +70,19 @@ export const reducer = (state = initialState, action) => {
     }
 
     if(action.type === "ADD_BASKET_ITEM") {
-        const newArr = [...state.basket, action.payload]
+        let haveItem = false;
+        let index = 0;
+        let newArr = [...state.basket];
+        for(let i = 0; i < newArr.length; i++){
+            if(action.payload.id === newArr[i].id) {
+                haveItem = true;
+                index = i;
+                newArr[index].count += 1; 
+            }
+        }
+        if(!haveItem) {
+            newArr = [...state.basket, action.payload]
+        } 
         return {
             ...state,
             basket: newArr

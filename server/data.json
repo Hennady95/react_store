@@ -3937,6 +3937,42 @@
 					"total_price": 672,
 					"delivery": false,
 					"adress_delivery": ""
+				},
+				{
+					"id": 1,
+					"products": [
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"code": "002354",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 1
+						},
+						{
+							"id": 0,
+							"title": "MSI GeForce GTX 1650 VENTUS XS OC",
+							"code": "002354",
+							"categoryPath": "GPU",
+							"src": "http://localhost:3002/1650_oc_msi_1.png",
+							"price": 336,
+							"count": 1
+						},
+						{
+							"id": 0,
+							"title": "GIGABYTE B450 AORUS ELITE (rev. 1.0)",
+							"code": "004357",
+							"categoryPath": "MotherBoards",
+							"src": "http://localhost:3002/b450_gigabyte_aorus_1.png",
+							"price": 250,
+							"count": 2
+						}
+					],
+					"date": "8-6-2021",
+					"total_price": 1172,
+					"delivery": true,
+					"adress_delivery": "[eqrjdbxb"
 				}
 			]
 		}

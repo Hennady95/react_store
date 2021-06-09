@@ -10,20 +10,23 @@ export const FindItems = ({show}) => {
     const findTitle = useSelector(state => state.findItemTitle);
     const [findData, setFindData] = useState(null);
 
-    useEffect( async () => {
-        try {
-            const response = await axios.get('http://localhost:3002/products');
-            const regExp = new RegExp(findTitle.toLowerCase());
-            const newData = response.data.reduce((data,item) => {
-                if(regExp.test(item.title.toLowerCase())) {
-                    data.push(item);
-                }
-                return data
-            }, []);
-            setFindData(newData);
-        } catch (err) {
-            
+    useEffect( () => {
+        const getData = async () => {
+            try {
+                const response = await axios.get('http://localhost:3002/products');
+                const regExp = new RegExp(findTitle.toLowerCase());
+                const newData = response.data.reduce((data,item) => {
+                    if(regExp.test(item.title.toLowerCase())) {
+                        data.push(item);
+                    }
+                    return data
+                }, []);
+                setFindData(newData);
+            } catch (err) {
+                
+            }
         }
+        getData();
     }, [findTitle])
 
     return <div className = "find-shadow" onClick = {(event) => {
@@ -33,7 +36,7 @@ export const FindItems = ({show}) => {
     }}>
         <div className = "find_result-container"  onClick = {(event) => event.stopPropagation()}>
             {findData && findData.map((item, index) => <div className = "find-item-container" key = {`${index}-${item.tiltle}`}>
-                    <img src = {item.src}/> 
+                    <img src = {item.src} alt = {`${item.title}`}/> 
                     <div>
                         <Link className = "fint_item-title" to = {`/catalog/${item.category}/${item.title}`} onClick = {() => {
                             show(false);
