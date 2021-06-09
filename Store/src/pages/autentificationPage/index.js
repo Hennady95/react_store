@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Redirect } from 'react-router';
 import './style.css'
@@ -9,8 +9,18 @@ export const AutentificationPage = () => {
     const dispatch = useDispatch();
 
     const redirect = useSelector(state => state.signIn);
+    const [registry, setRegistry] = useState(false);
+    const [userName, setUserName] = useState('');
+    const [userSurname, setUserSurname] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [userPhone, setUserPhone] = useState('');
+    const [userPassword, setUserPassword] = useState('');
+    const [confirmUserPassword, setConfirmUserPassword] = useState('');
+    const [error, setError] = useState('');
+    const [serverAnswer, setServerAnswer] = useState('');
 
-    const emptyFields = () => {
+
+    const emptyFields = useCallback (() => {
         setUserName('');
         setUserSurname('');
         setUserEmail('');
@@ -19,9 +29,9 @@ export const AutentificationPage = () => {
         setConfirmUserPassword('');
         setError('');
         setServerAnswer('');
-    }
+    },[])
 
-    const registration = async () => {
+    const registration = useCallback( async () => {
         if(userPassword === confirmUserPassword) {
             const newUser = {
                 action: 'registry',
@@ -36,9 +46,9 @@ export const AutentificationPage = () => {
         } else {
             setError('Введённые пароли не совпадают');
         }        
-    }
+    }, [confirmUserPassword, userEmail, userName, userSurname, userPassword, userPhone])
 
-    const signIn = async () => {
+    const signIn = useCallback( async () => {
         const userData = {
             action: 'signIn',
             phone: userPhone,
@@ -52,17 +62,7 @@ export const AutentificationPage = () => {
         } else {
             setError(answer);
         }
-    }
-
-    const [registry, setRegistry] = useState(false);
-    const [userName, setUserName] = useState('');
-    const [userSurname, setUserSurname] = useState('');
-    const [userEmail, setUserEmail] = useState('');
-    const [userPhone, setUserPhone] = useState('');
-    const [userPassword, setUserPassword] = useState('');
-    const [confirmUserPassword, setConfirmUserPassword] = useState('');
-    const [error, setError] = useState('');
-    const [serverAnswer, setServerAnswer] = useState('');
+    } , [dispatch, userPhone, userPassword])
 
     return <div className = "autentification-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         <div className = "user-form">

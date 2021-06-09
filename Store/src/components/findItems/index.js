@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './style.css'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 export const FindItems = ({show}) => {
@@ -29,20 +29,23 @@ export const FindItems = ({show}) => {
         getData();
     }, [findTitle])
 
-    return <div className = "find-shadow" onClick = {(event) => {
+    const closeFindItem = useCallback(() => {
         setFindData(null);
         show(false);
         dispatch({ type: 'DELETE_FIND_TITLE'});
-    }}>
+    }, [dispatch, show] );
+
+    const showFindItems = useCallback( (item) => {
+        show(false);
+        dispatch({ type: "SELECT_ITEM", payload: item})
+        }, [dispatch, show])
+
+    return <div className = "find-shadow" onClick = {closeFindItem}>
         <div className = "find_result-container"  onClick = {(event) => event.stopPropagation()}>
             {findData && findData.map((item, index) => <div className = "find-item-container" key = {`${index}-${item.tiltle}`}>
                     <img src = {item.src} alt = {`${item.title}`}/> 
                     <div>
-                        <Link className = "fint_item-title" to = {`/catalog/${item.category}/${item.title}`} onClick = {() => {
-                            show(false);
-                            dispatch({ type: "SELECT_ITEM", payload: item})
-                            }
-                        }>{item.title}</Link>
+                        <Link className = "fint_item-title" to = {`/catalog/${item.category}/${item.title}`} onClick = {() => showFindItems(item)}>{item.title}</Link>
                         <p className = "find_item-code">{`Код товара: ${item.code}`}</p>
                     </div>
                     <div>

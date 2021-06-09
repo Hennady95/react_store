@@ -1,6 +1,6 @@
 import './style.css'
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Redirect, useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { NotFound } from '../../components/notFound'
@@ -45,7 +45,7 @@ export const CategoryListPage = () => {
         getData();
     },[param,dispatch] )
 
-    const buyItem = (item) => {
+    const buyItem = useCallback( (item) => {
         const {id, title, src, price, code} = item;
         const categoryPath = param.category;
         const newBasketItem = {
@@ -58,9 +58,9 @@ export const CategoryListPage = () => {
             count: 1
         }
         dispatch({ type: "ADD_BASKET_ITEM", payload: newBasketItem});
-    }
+    }, [dispatch, param])
 
-    const searchProducts = async () => {
+    const searchProducts = useCallback( async () => {
         const data = await axios.get(`http://localhost:3002/category/${param.category}`);
         const newData = data.data.reduce((newArrProducts,product) => {
             let countFillters = 0;
@@ -80,7 +80,7 @@ export const CategoryListPage = () => {
             return newArrProducts
         }, []);
         setItems(newData);
-    }
+    } , [currentFillters, param])
 
     return <div className = "catalog-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         { !dataError && <div className = "catalog-container">

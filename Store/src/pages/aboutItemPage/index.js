@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import './style.css'
@@ -34,11 +34,41 @@ export const AboutPage = () => {
         return () => dispatch({type:"DELETE_ITEM"})
     }, [dispatch, item.id, item.category])
 
+    const showPicture = useCallback( (picture) => {
+            setShowImage(true);
+            setImagePath(picture);
+    } , [] )
+
+    const unShowPicture = useCallback( () => {
+        setShowImage(false);
+        setImagePath('');
+} , [] )
+
+    const sendComment = useCallback( async () => {
+        const date = new Date();
+        const sendData = {
+            product_id: item.id,
+            marks: mark,
+            product_category: item.category,
+            user_nickname: `${authUser.name} ${authUser.surname}`,
+            comment_text: comment,
+            date: `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}| ${date.getHours()}:${date.getMinutes()}`
+        } 
+        await axios.post('http://localhost:3002/sendComment', sendData);
+        if(itemComments)
+            setItemComments([sendData,...itemComments])
+        else {
+            setItemComments([sendData])
+        }
+        setComment('');
+        const raiting = document.getElementsByName('rating');
+        for(let i = 0; i< raiting.length; i++) {
+            raiting[i].checked = false;
+        }
+    }, [item, authUser,comment, itemComments, mark])
+
     return <div className = "about-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
-        <div className = "shadow-image" style = {showImage ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick = {() => {
-                setShowImage(false);
-                setImagePath('');
-                }}>
+        <div className = "shadow-image" style = {showImage ? {visibility: 'visible'} : {visibility: 'hidden'}} onClick = {unShowPicture}>
             <div className = "image-container">
                 <img src = {imagePath} alt={item.title} className = "selected-image" />  
             </div>
@@ -53,10 +83,7 @@ export const AboutPage = () => {
             <p className = "about_information-title">Описание</p>
             <div className = "about_information-container">
                 <div className = "about_pictures">
-                    {item.picture.map(picture => <img key ={picture} src = {picture} alt = {item.title} onClick = {() => {
-                        setShowImage(true);
-                        setImagePath(picture);
-                        }}/>)}
+                    {item.picture.map(picture => <img key ={picture} src = {picture} alt = {item.title} onClick = {() => showPicture(picture)}/>)}
                 </div>
                 <div className = "about_information">
                     {item.description.map(characteristic => <div className = "characteristic-container" key = {characteristic.paragraph_title}>
@@ -85,31 +112,9 @@ export const AboutPage = () => {
                         <label for="star-1" title="Оценка «1»"></label>
                     </div>
                     <textarea rows = "6"  placeholder = "Ваш комментарий..." className = "user-comment" value ={comment} onChange = {(event) => setComment(event.target.value)}/>
-                    <button className = "send-comment-btn" onClick = { async () => {
-                        const date = new Date();
-                        const sendData = {
-                            product_id: item.id,
-                            marks: mark,
-                            product_category: item.category,
-                            user_nickname: `${authUser.name} ${authUser.surname}`,
-                            comment_text: comment,
-                            date: `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}| ${date.getHours()}:${date.getMinutes()}`
-                        } 
-                        await axios.post('http://localhost:3002/sendComment', sendData);
-                        if(itemComments)
-                            setItemComments([sendData,...itemComments])
-                        else {
-                            setItemComments([sendData])
-                        }
-                        setComment('');
-                        const hueta = document.getElementsByName('rating');
-                        for(let i = 0; i< hueta.length; i++) {
-                            hueta[i].checked = false;
-                        }
-                    }}>Оставить комментарий</button>
+                    <button className = "send-comment-btn" onClick = {sendComment}>Оставить комментарий</button>
                 </div>}
-                {itemComments && itemComments.map((item,index) => <div key = {`${index}${item.nickname}`} className = "comment-item_container">
-                        
+                {itemComments && itemComments.map((item,index) => <div key = {`${index}${item.nickname}`} className = "comment-item_container">       
                         <div class="rating-mini">
                             {Array.from({length: item.marks}).map((item,index) => <span className = "active"></span>)}  
                             {Array.from({length: 5 - item.marks}).map((item,index) => <span></span>) }

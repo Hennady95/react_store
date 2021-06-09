@@ -1,6 +1,6 @@
 import './style.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 
 export const BasketPage = () => {
@@ -20,7 +20,7 @@ export const BasketPage = () => {
         setTotalPrice(price);
     }, [basket])
 
-    const sendData = async () => {
+    const sendData = useCallback (async () => {
         const date = new Date();
         const { id } = user;
         const basketData = {
@@ -38,15 +38,15 @@ export const BasketPage = () => {
         } else {
             alert('Вы ничего не положили в корзину')
         }
-    }
+    },[dispatch, user, totalPrice, basket, adress, delivery])
 
-    const sendOffer = () => {
+    const sendOffer = useCallback( () => {
         if(signIn) {
             sendData();
         } else {
             alert('Войдите в систему')
         }
-    }
+    }, [signIn, sendData])
 
     return <div className = "basket-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
         <div className = "basket-contaoner">
