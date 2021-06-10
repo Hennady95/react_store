@@ -116,6 +116,7 @@ export const CategoryListPage = () => {
                         <button className = "buy-item-btn" onClick = {() => buyItem(item)}/>
                     </div>
                 </div>)}
+                {categoryItems && categoryItems.length === 0 && <p className = "category-item-title" style = {{padding: '20px'}}>Товары по заданным критериям не найдены...</p>}
             </div>
         </div>}
         {dataError && <NotFound/>}
