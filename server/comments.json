@@ -1,13 +1,6 @@
 {
 	"CPU": [
-		{
-			"product_id": 0,
-			"marks": 5,
-			"product_category": "CPU",
-			"user_nickname": "qwe qwe",
-			"comment_text": "Callback test",
-			"date": "9-5-2021| 14:48"
-		}
+		
 	],
 	"GPU": [],
 	"MotherBoards": [],

@@ -26,15 +26,6 @@
 			"surname": "qwe",
 			"email": "qwe@gmail.com",
 			"role": "user"
-		},
-		{
-			"id": 3,
-			"phone": "+375292221133",
-			"password": "Qwe123",
-			"name": "йцуцйуйцу",
-			"surname": "йцуцйуйу",
-			"email": "12321312ыфв",
-			"role": "user"
 		}
 	],
 	"products": [
