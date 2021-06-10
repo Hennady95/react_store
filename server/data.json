@@ -1668,18 +1668,48 @@
 			"category_title": "Видеокарты",
 			"fillters": [
 				{
-					"title": "Производитель",
+					"title": "Производители",
 					"items": [
 						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"GIGABYTE",
+						"ASSROCK",
+						"MSI"
 					],
 					"value": [
 						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"gigabyte",
+						"assrock",
+						"msi"
+					]
+				},
+				{
+					"title": "Объёе памяти",
+					"items": [
+						"2 Гб",
+						"4 Гб",
+						"6 Гб",
+						"8 Гб"
+					],
+					"value": [
+						2,
+						4,
+						6,
+						8
+					]
+				},
+				{
+					"title": "Тип памяти",
+					"items": [
+						"GDDR5",
+						"GDDR5X",
+						"GDDR6",
+						"GDDR6X"
+					],
+					"value": [
+						"gddr5",
+						"gddr5x",
+						"gddr6",
+						"gddr6x"
 					]
 				}
 			],
@@ -1688,6 +1718,11 @@
 					"id": 0,
 					"title": "MSI GeForce GTX 1650 VENTUS XS OC",
 					"category": "GPU",
+					"tags": [
+						"msi",
+						"4",
+						"gddr5"
+					],
 					"src": "http://localhost:3002/1650_oc_msi_1.png",
 					"description": [
 						{
@@ -1841,6 +1876,11 @@
 					"id": 1,
 					"title": "MSI GeForce GTX 1650 4096MB LP OC",
 					"category": "GPU",
+					"tags": [
+						"msi",
+						"4",
+						"gddr5"
+					],
 					"src": "http://localhost:3002/1650_lp_msi_1.png",
 					"description": [
 						{
@@ -1993,6 +2033,11 @@
 					"id": 2,
 					"title": "GIGABYTE GeForce GTX 1660 OC",
 					"category": "GPU",
+					"tags": [
+						"gigabyte",
+						"6",
+						"gddr5"
+					],
 					"src": "http://localhost:3002/1660_gigabute_oc_1.png",
 					"description": [
 						{
@@ -2141,6 +2186,11 @@
 					"id": 2,
 					"title": "GIGABYTE GeForce GTX 1660 MINI ITX OC",
 					"category": "GPU",
+					"tags": [
+						"gigabyte",
+						"6",
+						"gddr5"
+					],
 					"src": "http://localhost:3002/1660_gigabute_oc_1.png",
 					"description": [
 						{
@@ -2294,18 +2344,95 @@
 			"category_title": "Материнские платы",
 			"fillters": [
 				{
-					"title": "Производитель",
+					"title": "Производители",
 					"items": [
 						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"GIGABYTE",
+						"ASSROCK",
+						"MSI"
 					],
 					"value": [
 						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"gigabyte",
+						"assrock",
+						"msi"
+					]
+				},
+				{
+					"title": "Производитель процессора",
+					"items": [
+						"AMD",
+						"INTEL"
+					],
+					"value": [
+						"amd",
+						"intel"
+					]
+				},
+				{
+					"title": "Сокет",
+					"items": [
+						"LGA1155",
+						"LGA1151",
+						"LGA1151 v2",
+						"AM4",
+						"LGA1200"
+					],
+					"value": [
+						"lga1155",
+						"lga1151",
+						"lga1151v2",
+						"am4",
+						"lga1200"
+					]
+				},
+				{
+					"title": "Тип памяти",
+					"items": [
+						"DDR3",
+						"DDR4"
+					],
+					"value": [
+						"ddr3",
+						"ddr4"
+					]
+				},
+				{
+					"title": "Количество слотов памяти",
+					"items": [
+						"2",
+						"4"
+					],
+					"value": [
+						2,
+						4
+					]
+				},
+				{
+					"title": "Название чипсета",
+					"items": [
+						"AMD B350",
+						"AMD B450",
+						"AMD B550",
+						"Intel B360",
+						"Intel B460",
+						"Intel B560",
+						"Intel Z370",
+						"Intel Z390",
+						"Intel Z470",
+						"Intel Z490"
+					],
+					"value": [
+						"b350",
+						"b450",
+						"b550",
+						"b360",
+						"b460",
+						"b560",
+						"z370",
+						"z390",
+						"z470",
+						"z490"
 					]
 				}
 			],
@@ -2314,6 +2441,14 @@
 					"id": 0,
 					"title": "GIGABYTE B450 AORUS ELITE (rev. 1.0)",
 					"category": "MotherBoards",
+					"tags": [
+						"gigabyte",
+						"amd",
+						"am4",
+						"ddr4",
+						"4",
+						"b450"
+					],
 					"src": "http://localhost:3002/b450_gigabyte_aorus_1.png",
 					"description": [
 						{
@@ -2442,6 +2577,14 @@
 					"id": 1,
 					"title": "MSI Z490-A PRO",
 					"category": "MotherBoards",
+					"tags": [
+						"msi",
+						"intel",
+						"lga1200",
+						"ddr4",
+						"4",
+						"z490"
+					],
 					"src": "http://localhost:3002/z490_msi_1.png",
 					"description": [
 						{
@@ -2573,16 +2716,78 @@
 				{
 					"title": "Производитель",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"KINGSTON",
+						"HYPERX",
+						"G. SKILL",
+						"CRUCIAL",
+						"SAMSUNG"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"kingston",
+						"hyperx",
+						"gskill",
+						"crucial",
+						"samsung"
+					]
+				},
+				{
+					"title": "Тип памяти",
+					"items": [
+						"DDR3",
+						"DDR3L",
+						"DDR4"
+					],
+					"value": [
+						"ddr3",
+						"ddr3l",
+						"ddr4"
+					]
+				}, 
+				{
+					"title": "Объём одного модуля",
+					"items": [
+						"4 Гб",
+						"8 Гб",
+						"16 Гб",
+						"32 Гб",
+						"64 Гб"
+					],
+					"value": [
+						4,
+						8,
+						16,
+						32,
+						64
+					]
+				},
+				{
+					"title": "Количество модулей",
+					"items": [
+						"1",
+						"2",
+						"4",
+						"8"
+					],
+					"value": [
+						1,
+						2,
+						4,
+						8
+					]
+				},
+				{
+					"title": "Тактовая частота",
+					"items": [
+						"2666",
+						"3000",
+						"3200",
+						"3600"
+					],
+					"value": [
+						2666,
+						3000,
+						3200,
+						3600
 					]
 				}
 			],
@@ -2591,6 +2796,13 @@
 					"id": 0,
 					"title": "HyperX HX432C16FB3K2/16",
 					"category": "Memory",
+					"tags": [
+						"hyperx",
+						"ddr4",
+						"8",
+						"2",
+						"3200"
+					],
 					"src": "http://localhost:3002/hyper_memory.png",
 					"description": [
 						{
@@ -2663,6 +2875,13 @@
 					"id": 1,
 					"title": "Kingston KVR26N19S8/8",
 					"category": "Memory",
+					"tags": [
+						"kingston",
+						"ddr4",
+						"8",
+						"1",
+						"2666"
+					],
 					"src": "http://localhost:3002/kingston_memoty.png",
 					"description": [
 						{
@@ -2740,18 +2959,48 @@
 			"category_title": "Охлаждение",
 			"fillters": [
 				{
-					"title": "Производитель",
+					"title": "Производители",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"Deepcool",
+						"Cooler master",
+						"Arctic Cooling",
+						"Arctic",
+						"AeroCool",
+						"BE QUIET",
+						"Thermalright",
+						"PCooler"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"deepcool",
+						"coolermaster",
+						"arcticcooling",
+						"arctic",
+						"aerocool",
+						"bequiet",
+						"thermalright",
+						"pcooler"
+					]
+				},
+				{
+					"title": "Назначение",
+					"items": [
+						"Корпус",
+						"Процессор"
+					],
+					"value": [
+						"corps",
+						"precessor"
+					]
+				},
+				{
+					"title": "Водяное охлаждение",
+					"items": [
+						"Да",
+						"Нет"
+					],
+					"value": [
+						"yes",
+						"no"
 					]
 				}
 			],
@@ -2760,6 +3009,11 @@
 					"id": 0,
 					"title": "Deepcool GAMMAXX 300",
 					"category": "Cooling",
+					"tags": [
+						"deepcool",
+						"processor",
+						"no"
+					],
 					"src": "http://localhost:3002/deepcool_gammax_300_1.png",
 					"description": [
 						{
@@ -2842,6 +3096,11 @@
 					"id": 1,
 					"title": "Arctic Freezer 34 eSports DUO",
 					"category": "Cooling",
+					"tags": [
+						"arctic",
+						"processor",
+						"no"
+					],
 					"src": "http://localhost:3002/Arctic_Freezer_34_eSports_DUO_1.png",
 					"description": [
 						{
@@ -2931,16 +3190,65 @@
 				{
 					"title": "Производитель",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"FSP",
+						"BE QUIET",
+						"CHIFTEC",
+						"AeroCool",
+						"Cooler Master",
+						"Termaltake",
+						"Seasonic"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"fsp",
+						"bequiet",
+						"chiftec",
+						"aerocool",
+						"coolermaster",
+						"termaltake",
+						"seasonic"
+					]
+				},
+				{
+					"title": "PFC",
+					"items": [
+						"Активный",
+						"Пассивный",
+						"нет"
+					],
+					"value": [
+						"active",
+						"passive",
+						"no"
+					]
+				},
+				{
+					"title": "Сертификат 80 PLUS",
+					"items": [
+						"BRONZE",
+						"GOLD",
+						"PLATINUM",
+						"SILVER",
+						"TITANIUM",
+						"Простой"
+					],
+					"value": [
+						"bronze",
+						"gold",
+						"platinum",
+						"silver",
+						"titanium",
+						"simple"
+					]
+				},
+				{
+					"title": "Модульный",
+					"items": [
+						"Да",
+						"Нет"
+					],
+					"value": [
+						"yes",
+						"no"
 					]
 				}
 			],
@@ -2949,6 +3257,12 @@
 					"id": 0,
 					"title": "be quiet! System Power 9 600W",
 					"category": "PowerBlock",
+					"tags": [
+						"bequiet",
+						"active",
+						"bronze",
+						"no"
+					],
 					"src": "http://localhost:3002/be_quiet_SP_9.png",
 					"description": [
 						{
@@ -3059,6 +3373,12 @@
 					"id": 1,
 					"title": "FSP Group ATX-500PNR 500W",
 					"category": "PowerBlock",
+					"tags": [
+						"fsp",
+						"active",
+						"simple",
+						"no"
+					],
 					"src": "http://localhost:3002/fsp_pnr_500W_1.png",
 					"description": [
 						{
@@ -3168,16 +3488,38 @@
 				{
 					"title": "Производитель",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"Seagate",
+						"Toshiba",
+						"Western Digital",
+						"Hitachi"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"seagate",
+						"toshiba",
+						"wd",
+						"hitachi"
+					]
+				},
+				{
+					"title": "Форм-фактор",
+					"items": [
+						"2.5''",
+						"3.5''"
+					],
+					"value": [
+						"2.5",
+						"3.5"
+					]
+				},
+				{
+					"title": "Скорость вращения",
+					"items": [
+						"5400",
+						"7200"
+					],
+					"value": [
+						"5400",
+						"7200"
 					]
 				}
 			],
@@ -3186,6 +3528,11 @@
 					"id": 0,
 					"title": "Seagate ST4000VN008",
 					"category": "HardDrive",
+					"tags": [
+						"seagate",
+						"3.5",
+						"5400"
+					],
 					"src": "http://localhost:3002/Seagate_ST4000VN008_1.png",
 					"description": [
 						{
@@ -3213,7 +3560,7 @@
 								},
 								{
 									"title": "Скорость вращения",
-									"value": "5 900 rpm"
+									"value": "5 400 rpm"
 								},
 								{
 									"title": "Внешняя скорость передачи данных",
@@ -3294,6 +3641,11 @@
 					"id": 1,
 					"title": "Western Digital WD10EZEX",
 					"category": "HardDrive",
+					"tags": [
+						"wd",
+						"3.5",
+						"7200"
+					],
 					"src": "http://localhost:3002/WD_Blue_1.png",
 					"description": [
 						{
@@ -3399,16 +3751,33 @@
 				{
 					"title": "Производитель",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"Seagate",
+						"Kingston",
+						"Crucial",
+						"Western Digital",
+						"Adata",
+						"Gigabyte",
+						"Samsung"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"seagate",
+						"kingston",
+						"crucial",
+						"wd",
+						"adata",
+						"gigabyte",
+						"samsung"
+					]
+				},
+				{
+					"title": "Форм-фактор",
+					"items": [
+						"2.5''",
+						"3.5''"
+					],
+					"value": [
+						"2.5",
+						"3.5"
 					]
 				}
 			],
@@ -3417,6 +3786,10 @@
 					"id": 0,
 					"title": "Crucial CT240BX500SSD1",
 					"category": "SSD",
+					"tags": [
+						"crusial",
+						"2.5"
+					],
 					"src": "http://localhost:3002/Crucial_CT240BX500SSD1_1.png",
 					"description": [
 						{
@@ -3495,6 +3868,10 @@
 					"id": 0,
 					"title": "Samsung 500 GB MZ 77E500BW",
 					"category": "SSD",
+					"tags": [
+						"samsung",
+						"2.5"
+					],
 					"src": "http://localhost:3002/Samsung_500_GB_MZ-77E500BW_1.png",
 					"description": [
 						{
@@ -3595,18 +3972,61 @@
 			"category_title": "Корпуса",
 			"fillters": [
 				{
-					"title": "Производитель",
+					"title": "Производители",
 					"items": [
-						"ASUS",
-						"LENOVO",
-						"APPLE",
-						"HP"
+						"Aerocool",
+						"Zalman",
+						"Fractal",
+						"Cooler Master",
+						"BE QUIET",
+						"Deepcool",
+						"Termaltake"
 					],
 					"value": [
-						"asus",
-						"lenovo",
-						"apple",
-						"hp"
+						"aerocool",
+						"zalman",
+						"fractal",
+						"coolermaster",
+						"bequiet",
+						"deepcool",
+						"termaltake"
+					]
+				},
+				{
+					"title": "Форм-фактор",
+					"items": [
+						"mATX",
+						"ATX",
+						"mini-ITX",
+						"EATX"
+					],
+					"value": [
+						"matx",
+						"atx",
+						"miniitx",
+						"eatx"
+					]
+				},
+				{
+					"title": "Блок питания в комплекте",
+					"items": [
+						"Да",
+						"Нет"
+					],
+					"value": [
+						"yes",
+						"no"
+					]
+				},
+				{
+					"title": "Окно на боковой стенке",
+					"items": [
+						"Да",
+						"Нет"
+					],
+					"value": [
+						"yes",
+						"no"
 					]
 				}
 			],
@@ -3615,6 +4035,12 @@
 					"id": 0,
 					"title": "be quiet! Pure Base 500DX",
 					"category": "BodyPC",
+					"tags": [
+						"bequiet",
+						"atx",
+						"no",
+						"yes"
+					],
 					"src": "http://localhost:3002/BQ_PB_500DX_1.png",
 					"description": [
 						{
@@ -3732,6 +4158,12 @@
 					"id": 1,
 					"title": "AeroCool Cylon Black",
 					"category": "BodyPC",
+					"tags": [
+						"aerocool",
+						"atx",
+						"no",
+						"yes"
+					],
 					"src": "http://localhost:3002/AeroCool_Cylon_Black_1.png",
 					"description": [
 						{

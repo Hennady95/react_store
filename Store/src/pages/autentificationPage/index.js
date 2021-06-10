@@ -57,7 +57,6 @@ export const AutentificationPage = () => {
         const response = await axios.post('http://localhost:3002/auth', userData);
         const {login, answer} = response.data;
         if(login) {
-            console.log(answer);
             dispatch({type: "SET_USER", payload: {...answer}})
         } else {
             setError(answer);
