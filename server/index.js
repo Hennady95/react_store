@@ -54,12 +54,14 @@ router.get('/category/:categoryTitle',(ctx) => {
 router.post('/history', (ctx) => {
   const { id } = ctx.request.body;
   let index = 0;
+  let findUser = false;
   for(let i = 0; i < DB.buy_history.length; i++) {
     if(DB.buy_history[i].user_id === id) {
       index = i;
+      findUser = true;
     }
   }
-  if(DB.buy_history[index].buy_history.length != 0) {
+  if(findUser && DB.buy_history[index].buy_history.length != 0) {
     ctx.body = DB.buy_history[index].buy_history;
   } else {
     ctx.body = null;

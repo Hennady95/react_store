@@ -26,6 +26,15 @@
 			"surname": "qwe",
 			"email": "qwe@gmail.com",
 			"role": "user"
+		},
+		{
+			"id": 3,
+			"phone": "+375292221133",
+			"password": "Qwe123",
+			"name": "йцуцйуйцу",
+			"surname": "йцуцйуйу",
+			"email": "12321312ыфв",
+			"role": "user"
 		}
 	],
 	"products": [
@@ -2742,7 +2751,7 @@
 						"ddr3l",
 						"ddr4"
 					]
-				}, 
+				},
 				{
 					"title": "Объём одного модуля",
 					"items": [
@@ -4290,25 +4299,6 @@
 	],
 	"buy_history": [
 		{
-			"user_id": 0,
-			"buy_history": [
-				{
-					"id": 0,
-					"products": [
-						{
-							"title": "qwe",
-							"count": 2,
-							"price": 65.5
-						}
-					],
-					"date": "02/02/2020",
-					"total_price": 123,
-					"delivery": false,
-					"adress_delivery": ""
-				}
-			]
-		},
-		{
 			"user_id": 1,
 			"buy_history": [
 				{
@@ -4405,6 +4395,225 @@
 					"total_price": 1172,
 					"delivery": true,
 					"adress_delivery": "[eqrjdbxb"
+				},
+				{
+					"id": 2,
+					"products": [
+						{
+							"id": 14,
+							"title": "AMD Ryzen 9 5900X",
+							"category": "CPU",
+							"tags": [
+								"amd",
+								"r9",
+								"am4",
+								"12"
+							],
+							"src": "http://localhost:3002/ryzen_9.png",
+							"description": [
+								{
+									"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+									"params": [
+										{
+											"title": "Линейка",
+											"value": "AMD Ryzen 9"
+										},
+										{
+											"title": "Сокет",
+											"value": "AM4"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЯДРО",
+									"params": [
+										{
+											"title": "Количество ядер",
+											"value": "12"
+										},
+										{
+											"title": "Техпроцесс",
+											"value": "7 нм"
+										},
+										{
+											"title": "Интегрированное графическое ядро",
+											"value": "нет"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЧАСТОТА",
+									"params": [
+										{
+											"title": "Частота процессора",
+											"value": "3 700 МГц"
+										},
+										{
+											"title": "Частота с Turbo Boost",
+											"value": "4 800 МГц"
+										},
+										{
+											"title": "Количество каналов памяти",
+											"value": "2"
+										}
+									]
+								},
+								{
+									"paragraph_title": "КЭШ",
+									"params": [
+										{
+											"title": "Объем кэша L2",
+											"value": "6 Мб"
+										},
+										{
+											"title": "Объем кэша L3",
+											"value": "64 Мб"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+									"params": [
+										{
+											"title": "Тепловыделение",
+											"value": "105 Вт"
+										}
+									]
+								}
+							],
+							"picture": [
+								"http://localhost:3002/ryzen_9.png"
+							],
+							"code": "002367",
+							"price": 1700,
+							"count": 2
+						},
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"category": "CPU",
+							"tags": [
+								"intel",
+								"i3",
+								"lga1200",
+								"4"
+							],
+							"src": "http://localhost:3002/i3_10g.png",
+							"description": [
+								{
+									"paragraph_title": "ОБЩИЕ ХАРАКТЕРИСТИКИ",
+									"params": [
+										{
+											"title": "Линейка",
+											"value": "Intel Core i3"
+										},
+										{
+											"title": "Сокет",
+											"value": "LGA1200"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЯДРО",
+									"params": [
+										{
+											"title": "Ядро",
+											"value": "Comet Lake-S"
+										},
+										{
+											"title": "Количество ядер",
+											"value": "4"
+										},
+										{
+											"title": "Техпроцесс",
+											"value": "14 нм"
+										},
+										{
+											"title": "Интегрированное графическое ядро",
+											"value": "есть"
+										},
+										{
+											"title": "Название графического ядра",
+											"value": "UHD 630"
+										},
+										{
+											"title": "Максимальная частота графического ядра",
+											"value": "1 100 МГц"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ЧАСТОТА",
+									"params": [
+										{
+											"title": "Частота процессора",
+											"value": "3 600 МГц"
+										},
+										{
+											"title": "Частота с Turbo Boost",
+											"value": "4 300 МГц"
+										},
+										{
+											"title": "Максимальная полоса пропускания памяти",
+											"value": "41.6 Гб/с"
+										},
+										{
+											"title": "Количество каналов памяти",
+											"value": "2"
+										}
+									]
+								},
+								{
+									"paragraph_title": "КЭШ",
+									"params": [
+										{
+											"title": "Объем кэша L1",
+											"value": "64 Кб"
+										},
+										{
+											"title": "Объем кэша L2",
+											"value": "1 Мб"
+										},
+										{
+											"title": "Объем кэша L3",
+											"value": "6 Мб"
+										}
+									]
+								},
+								{
+									"paragraph_title": "ДОПОЛНИТЕЛЬНО",
+									"params": [
+										{
+											"title": "Тепловыделение",
+											"value": "65 Вт"
+										},
+										{
+											"title": "ЧМакс. рабочая температура",
+											"value": "100 °C"
+										},
+										{
+											"title": "Макс. объем памяти",
+											"value": "128 Гб"
+										},
+										{
+											"title": "Количество каналов PCI Express",
+											"value": "16"
+										}
+									]
+								}
+							],
+							"picture": [
+								"http://localhost:3002/i3_10g.png"
+							],
+							"code": "002354",
+							"price": 336,
+							"count": 3
+						}
+					],
+					"date": "10-6-2021",
+					"total_price": 4408,
+					"delivery": true,
+					"adress_delivery": "rtqwdrtyrdty"
 				}
 			]
 		}
