@@ -2,6 +2,7 @@ import './style.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
+import { clearBasket, minusItemCount, plusItemCount, deleteBasketItem } from '../../actionCreators';
 
 export const BasketPage = () => {
 
@@ -33,7 +34,7 @@ export const BasketPage = () => {
         }
         if(basket.length !== 0) {
             await axios.post('http://localhost:3002/buyItem',basketData);
-            dispatch({type: "CLEAR_BASKET"});
+            dispatch(clearBasket());
             alert('Покупка совершена');
         } else {
             alert('Вы ничего не положили в корзину')
@@ -61,9 +62,9 @@ export const BasketPage = () => {
                     <div className = "item-counter-container">
                         <p>Количество:</p>
                         <div className = "item-counter">
-                            <button className = "counter-btn" onClick = {() => dispatch({type: "DELETE_ITEM_COUNT", payload: index})}>-</button>
+                            <button className = "counter-btn" onClick = {() => dispatch(minusItemCount(index))}>-</button>
                             <p className = "counter-value">{item.count}</p>
-                            <button className = "counter-btn" onClick = {() => dispatch({type: "ADD_ITEM_COUNT", payload: index})}>+</button>
+                            <button className = "counter-btn" onClick = {() => dispatch(plusItemCount(index))}>+</button>
                         </div>
                     </div>
                     <div>
@@ -71,7 +72,7 @@ export const BasketPage = () => {
                         <p className = "item-label">наличие:</p>
                     </div>
                     <div>
-                        <button className = "delete-btn" onClick = {() => dispatch({type: "DELETE_BASKET_ITEM", payload: index})}/>
+                        <button className = "delete-btn" onClick = {() => dispatch(deleteBasketItem(index))}/>
                         <p className = "label">В наличии</p>
                     </div>
                 </div>

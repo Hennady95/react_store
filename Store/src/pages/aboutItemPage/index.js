@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import axios from 'axios'
-import './style.css'
+import { useCallback, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+import { deleteCurrentItem, addBasketItem } from '../../actionCreators';
+import './style.css';
 
 export const AboutPage = () => {
 
@@ -31,7 +32,7 @@ export const AboutPage = () => {
             }
         }
         getComment();
-        return () => dispatch({type:"DELETE_ITEM"})
+        return () => dispatch(deleteCurrentItem())
     }, [dispatch, item.id, item.category])
 
     const showPicture = useCallback( (picture) => {
@@ -78,7 +79,7 @@ export const AboutPage = () => {
             <div className = "short-info">
                 <img src = {item.src} alt = {item.title}/>
                 <p className = "price-title">{`Цена: ${item.price} руб`}</p>
-                <button className = "basket-btn" onClick = {() => dispatch({type: "ADD_BASKET_ITEM",payload: {...item, count: 1}})}>Отправить в корзину</button>
+                <button className = "basket-btn" onClick = {() => dispatch(addBasketItem({...item, count: 1}))}>Отправить в корзину</button>
             </div>
             <p className = "about_information-title">Описание</p>
             <div className = "about_information-container">

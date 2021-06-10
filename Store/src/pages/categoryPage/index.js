@@ -3,7 +3,8 @@ import axios from 'axios'
 import { useCallback, useEffect, useState } from 'react'
 import { Redirect, useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
-import { NotFound } from '../../components/notFound'
+import { NotFound } from '../../components/notFound';
+import { addBasketItem, selectedCategoryPath, selectItem} from '../../actionCreators';
 
 export const CategoryListPage = () => {
 
@@ -27,7 +28,7 @@ export const CategoryListPage = () => {
                 const filterData = await axios.get(`http://localhost:3002/fillters/${param.category}`)
                 setItems(response.data);
                 setFilters(filterData.data);
-                dispatch({type: "SET_CATEGORY_PATH", payload: param.category});
+                dispatch(selectedCategoryPath(param.category));
                 setDataError(false);
                 let defaultCurrentFillters =[];
                 for(let i = 0; i < filterData.data.length; i++) {
@@ -57,7 +58,7 @@ export const CategoryListPage = () => {
             price,
             count: 1
         }
-        dispatch({ type: "ADD_BASKET_ITEM", payload: newBasketItem});
+        dispatch(addBasketItem(newBasketItem));
     }, [dispatch, param])
 
     const searchProducts = useCallback( async () => {
@@ -112,7 +113,7 @@ export const CategoryListPage = () => {
                     <img src = {item.src} alt = {item.title}/>
                     <p className = "category-item-title">{item.title}</p>
                     <div className = "item-controll"> 
-                        <button className = "show-item-btn" onClick = {() => dispatch({type: "SELECT_ITEM",payload: item})}/>
+                        <button className = "show-item-btn" onClick = {() => dispatch(selectItem(item))}/>
                         <button className = "buy-item-btn" onClick = {() => buyItem(item)}/>
                     </div>
                 </div>)}

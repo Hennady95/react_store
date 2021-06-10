@@ -2,7 +2,8 @@ import './style.css'
 import {useDispatch, useSelector} from 'react-redux'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { NotFound } from '../../components/notFound'
+import { NotFound } from '../../components/notFound';
+import { takeDataSuccess, takeDataFailure} from '../../actionCreators';
 
 export const PurchaseHistory = () => {
 
@@ -19,9 +20,9 @@ export const PurchaseHistory = () => {
                 setData(response.data);
                 if(response.data.length ===0)
                  setEmptyHistory(true);
-                dispatch({type: "TAKE_DATA_SUCCESS"});
+                dispatch(takeDataSuccess());
             } catch (err) {
-                dispatch({type: "TAKE_DATA_FAILURE"});
+                dispatch(takeDataFailure());
             }
         }
         getData();

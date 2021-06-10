@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useCallback, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Redirect } from 'react-router';
+import { setUser } from '../../actionCreators';
 import './style.css'
 
 export const AutentificationPage = () => {
@@ -57,7 +58,7 @@ export const AutentificationPage = () => {
         const response = await axios.post('http://localhost:3002/auth', userData);
         const {login, answer} = response.data;
         if(login) {
-            dispatch({type: "SET_USER", payload: {...answer}})
+            dispatch(setUser({...answer}))
         } else {
             setError(answer);
         }
