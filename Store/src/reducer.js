@@ -74,7 +74,9 @@ export const reducer = (state = initialState, action) => {
         let index = 0;
         let newArr = [...state.basket];
         for(let i = 0; i < newArr.length; i++){
-            if(action.payload.id === newArr[i].id) {
+            console.log(action.payload);
+            console.log(newArr[i]);
+            if(action.payload.id === newArr[i].id && action.payload.categoryPath === newArr[i].categoryPath) {
                 haveItem = true;
                 index = i;
                 newArr[index].count += 1; 

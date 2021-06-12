@@ -75,7 +75,6 @@ router.get('/fillters/:fillterCategory',(ctx) => {
     }
     return filltersArr;
   }, [])
-  //const products = DB.products.find(fillter => category.category_path === ctx.params.fillterCategory)
     ctx.response.body = fillters;//products.items; // тело ответа
 })
 
@@ -129,14 +128,12 @@ router.post('/auth', (ctx) => {
 
 router.post('/buyItem', (ctx) => {
   const {id, products, date, total_price, delivery, adress_delivery} = ctx.request.body;
-  //const userBasketCount = DB.buy_history
   let findUserBasketIndex = 0; 
   let userHaveBasket = false;
   DB.buy_history.map((item,index) => {
     if(item.user_id === id && DB.buy_history.length > 0) {
       findUserBasketIndex = index ;
       userHaveBasket = true;
-      console.log(findUserBasketIndex);
     }
   })
   if(userHaveBasket) {
@@ -169,12 +166,6 @@ router.post('/buyItem', (ctx) => {
     ctx.body = "данные получены";
     fs.writeFileSync('data.json', JSON.stringify(DB, null, '\t'));
   }
- /* const userBasketItem = {
-    user_id: id,
-    buy_history: [
-      
-    ]
-  }*/
 })
 
 //get comments for item

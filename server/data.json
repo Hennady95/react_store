@@ -26,6 +26,15 @@
 			"surname": "qwe",
 			"email": "qwe@gmail.com",
 			"role": "user"
+		},
+		{
+			"id": 3,
+			"phone": "+375293332211",
+			"password": "Qwe123",
+			"name": "Test",
+			"surname": "Test",
+			"email": "wehgvg126sh26",
+			"role": "user"
 		}
 	],
 	"products": [
@@ -4605,6 +4614,29 @@
 					"total_price": 4408,
 					"delivery": true,
 					"adress_delivery": "rtqwdrtyrdty"
+				}
+			]
+		},
+		{
+			"user_id": 3,
+			"buy_history": [
+				{
+					"id": 0,
+					"products": [
+						{
+							"id": 0,
+							"title": "Intel Core i3-10100 Comet Lake",
+							"code": "002354",
+							"categoryPath": "CPU",
+							"src": "http://localhost:3002/i3_10g.png",
+							"price": 336,
+							"count": 6
+						}
+					],
+					"date": "11-6-2021",
+					"total_price": 2016,
+					"delivery": true,
+					"adress_delivery": "test"
 				}
 			]
 		}

@@ -63,7 +63,7 @@ export const AboutPage = () => {
         }
         setComment('');
         const raiting = document.getElementsByName('rating');
-        for(let i = 0; i< raiting.length; i++) {
+        for(let i = 0; i < raiting.length; i++) {
             raiting[i].checked = false;
         }
     }, [item, authUser,comment, itemComments, mark])

@@ -19,7 +19,7 @@ export const AutentificationPage = () => {
     const [confirmUserPassword, setConfirmUserPassword] = useState('');
     const [error, setError] = useState('');
     const [serverAnswer, setServerAnswer] = useState('');
-
+    //1 obj
 
     const emptyFields = useCallback (() => {
         setUserName('');

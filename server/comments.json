@@ -1,12 +1,19 @@
 {
-	"CPU": [
-		
-	],
+	"CPU": [],
 	"GPU": [],
 	"MotherBoards": [],
 	"Memory": [],
 	"Cooling": [],
-	"PowerBlock": [],
+	"PowerBlock": [
+		{
+			"product_id": 0,
+			"marks": 4,
+			"product_category": "PowerBlock",
+			"user_nickname": "Test Test",
+			"comment_text": "reqrteweqwe",
+			"date": "11-5-2021| 17:52"
+		}
+	],
 	"HardDrive": [],
 	"SSD": [],
 	"BodyPC": []
