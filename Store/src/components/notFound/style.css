@@ -1,6 +1,8 @@
 .not-found-container {
     display: flex;
     padding: 30px;
+    margin: 0 auto;
+    width: max-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;

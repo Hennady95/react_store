@@ -1,11 +1,11 @@
 .category-page {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    /*flex-wrap: wrap;*/
     width: 1200px;
     margin: 0 auto;
     padding: 25px 25px 26px 32px;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: flex-start;*/
     background: url('../../assets/background.jpg');
 }
 
@@ -33,4 +33,12 @@
 
 .category-icon {
     max-height: 200px;
+}
+
+.category-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }

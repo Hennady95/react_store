@@ -27,12 +27,14 @@ export const SelectCategoryPage = () => {
     },[dispatch])
 
     return <div className = "category-page" style = {{minHeight: `${window.innerHeight - 211}px`}}>
-        {!dataError &&categoryItems && categoryItems.map((category,index) =>
-            <Link key ={index} className = "category-container" to = {`/catalog/${category.path}`} onClick = {() => dispatch(selectedCategory(category.title))}>
-                <p className = "category-title">{category.title}</p>
-                <img src = {category.pictchure} className = "category-icon" alt = {category.title}/>
-            </Link>
-        )}
+        <div className = "category-wrapper">
+            {!dataError &&categoryItems && categoryItems.map((category,index) =>
+                <Link key ={index} className = "category-container" to = {`/catalog/${category.path}`} onClick = {() => dispatch(selectedCategory(category.title))}>
+                    <p className = "category-title">{category.title}</p>
+                    <img src = {category.pictchure} className = "category-icon" alt = {category.title}/>
+                </Link>
+            )}
+        </div>
         {dataError && < NotFound />}
     </div>
 } 

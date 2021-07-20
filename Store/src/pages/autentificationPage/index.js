@@ -33,34 +33,44 @@ export const AutentificationPage = () => {
     },[])
 
     const registration = useCallback( async () => {
-        if(userPassword === confirmUserPassword) {
-            const newUser = {
-                action: 'registry',
-                phone: userPhone,
-                password: userPassword,
-                name: userName,
-                surname: userSurname,
-                email: userEmail
-            }
-            const response = await axios.post('http://localhost:3002/auth', newUser);
-            setServerAnswer(response.data);
-        } else {
-            setError('Введённые пароли не совпадают');
-        }        
+        try {
+            if(userPassword === confirmUserPassword) {
+                const newUser = {
+                    action: 'registry',
+                    phone: userPhone,
+                    password: userPassword,
+                    name: userName,
+                    surname: userSurname,
+                    email: userEmail
+                }
+                const response = await axios.post('http://localhost:3002/auth', newUser);
+                setServerAnswer(response.data);
+            } else {
+                setError('Введённые пароли не совпадают');
+            }      
+        }
+        catch {
+            alert('сервер не доступен')
+        }  
     }, [confirmUserPassword, userEmail, userName, userSurname, userPassword, userPhone])
 
     const signIn = useCallback( async () => {
-        const userData = {
-            action: 'signIn',
-            phone: userPhone,
-            password: userPassword
+        try {
+            const userData = {
+                action: 'signIn',
+                phone: userPhone,
+                password: userPassword
+            }
+            const response = await axios.post('http://localhost:3002/auth', userData);
+            const {login, answer} = response.data;
+            if(login) {
+                dispatch(setUser({...answer}))
+            } else {
+                setError(answer);
+            }
         }
-        const response = await axios.post('http://localhost:3002/auth', userData);
-        const {login, answer} = response.data;
-        if(login) {
-            dispatch(setUser({...answer}))
-        } else {
-            setError(answer);
+        catch {
+            alert('сервер не доступен')
         }
     } , [dispatch, userPhone, userPassword])
 

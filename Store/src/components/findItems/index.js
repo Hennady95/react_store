@@ -9,6 +9,7 @@ export const FindItems = ({show}) => {
     const dispatch = useDispatch();
     const findTitle = useSelector(state => state.findItemTitle);
     const [findData, setFindData] = useState(null);
+    const [lostServerConnection,setLostServerConnection] = useState(false);
 
     useEffect( () => {
         const getData = async () => {
@@ -22,8 +23,9 @@ export const FindItems = ({show}) => {
                     return data
                 }, []);
                 setFindData(newData);
+                setLostServerConnection(false);
             } catch (err) {
-                
+                setLostServerConnection(true);
             }
         }
         getData();
@@ -53,6 +55,7 @@ export const FindItems = ({show}) => {
                         <button className = "find_buy-btn" onClick = {() => dispatch({ type: "ADD_BASKET_ITEM", payload: {...item, count: 1}})}>В корзину</button>
                     </div>
             </div>)}
+            {lostServerConnection && <p>Сервер не доступен</p>}
         </div>
     </div>
 }

@@ -16,6 +16,20 @@ const fs = require('fs');
 server.use(serve('./category'));//открытие доступа к картинкам в папке категорий
 server.use(serve('./products'));
 
+
+//upload picture
+//const multer = require('multer');
+//const uploads = multer({dest:'uploads/'});
+
+//server.use(uploads.any());
+
+//используем express router - как пользоваться см. в интернете
+router.post('/admin/create-product', (req, res, next) => {
+    console.log('req.files', req.files);
+    console.log('req.body', req.body);
+});
+//
+
 server.use(
   cors({
     origin: '*',
@@ -130,6 +144,7 @@ router.post('/buyItem', (ctx) => {
   const {id, products, date, total_price, delivery, adress_delivery} = ctx.request.body;
   let findUserBasketIndex = 0; 
   let userHaveBasket = false;
+  //basket лучше писать через {{},{},...,{n}}
   DB.buy_history.map((item,index) => {
     if(item.user_id === id && DB.buy_history.length > 0) {
       findUserBasketIndex = index ;
